@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensGlow service zones — check if we cover your area. Mobile headlight restoration serving Downtown, Suburbs, and Metro areas with fast response times.">
+    <title>Service Zones | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="navbar-container"></div>
+
+    <!-- Page Hero -->
+    <section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container">
+            <nav style="font-size:0.85rem;margin-bottom:16px;color:rgba(255,255,255,0.6);">
+                <a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <span style="color:var(--primary-light);">Service Zones</span>
+            </nav>
+            <h1 style="font-size:2.6rem;color:#fff;margin-bottom:12px;">Mobile Service Zones</h1>
+            <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;">We bring professional headlight restoration to your location. Check your coverage area below.</p>
+        </div>
+    </section>
+
+    <!-- Zone Checker -->
+    <section class="section" id="zone-checker-section">
+        <div class="container" style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+            <!-- Zone Check -->
+            <div class="animate-on-scroll zoom-in" style="max-width:600px; width:100%; margin-bottom:48px;">
+                <span class="section-label">Check Your Area</span>
+                <h2 style="margin-bottom:16px;">Enter Your ZIP Code</h2>
+                <p style="color:var(--text-muted);margin-bottom:24px;">Find out if you're in our standard service area and see estimated response times.</p>
+                <form id="zone-check-form" style="display:flex;gap:8px;margin-bottom:16px; justify-content:center;">
+                    <input type="text" class="form-input" placeholder="Enter ZIP code (e.g., 10001)" style="flex:1; max-width:320px;" maxlength="5" pattern="[0-9]{5}">
+                    <button type="submit" class="btn btn-primary">Check</button>
+                </form>
+                <div id="zone-check-result" style="text-align:left; max-width:440px; margin:0 auto;"></div>
+                <p style="font-size:0.8rem;color:var(--text-muted);margin-top:12px;"><i class="fa-solid fa-info-circle" style="margin-right:4px;"></i> Not in our zone? We often extend coverage for fleet customers. <a href="contact.html" style="color:var(--primary);font-weight:600;">Contact us</a> for a custom quote.</p>
+            </div>
+
+            <!-- Map -->
+            <div class="animate-on-scroll zoom-in" style="max-width:1200px; width:100%; display:flex; justify-content:center;">
+                <img src="assets/images/contact-map.png" alt="LensGlow service coverage area map" style="border-radius:var(--radius-xl);border:1px solid var(--border-light);box-shadow:0 8px 32px var(--shadow-base);width:100%; height:380px; object-fit:cover; object-position:center; display:block; margin:0 auto;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Zone Details -->
+    <section class="section" id="zone-details" style="background:var(--warm-white);border-top:1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Coverage Areas</span>
+                <h2>Our Three Service Zones</h2>
+            </div>
+            <div class="grid-3">
+                <!-- Zone 1 -->
+                <div class="zone-card animate-on-scroll slide-left">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                        <div style="width:44px;height:44px;border-radius:50%;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size:1.1rem;margin-bottom:2px;">Downtown Core</h3>
+                            <span class="badge badge-primary">Zone A</span>
+                        </div>
+                    </div>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:16px;">Central business district and surrounding neighborhoods within a 5-mile radius.</p>
+                    <div style="display:flex;flex-direction:column;gap:8px;font-size:0.85rem;">
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Response Time:</span><strong style="color:var(--success);">30 minutes</strong></div>
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">ZIP Codes:</span><strong>10001–10005, 10010–10013</strong></div>
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Travel Fee:</span><strong style="color:var(--success);">Free</strong></div>
+                    </div>
+                </div>
+                <!-- Zone 2 -->
+                <div class="zone-card animate-on-scroll zoom-in delay-100">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                        <div style="width:44px;height:44px;border-radius:50%;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size:1.1rem;margin-bottom:2px;">Suburban Area</h3>
+                            <span class="badge badge-warning">Zone B</span>
+                        </div>
+                    </div>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:16px;">Residential suburbs and shopping districts within a 5–15 mile radius from downtown.</p>
+                    <div style="display:flex;flex-direction:column;gap:8px;font-size:0.85rem;">
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Response Time:</span><strong style="color:var(--warning);">45 minutes</strong></div>
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">ZIP Codes:</span><strong>10101–10103, 10201–10302</strong></div>
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Travel Fee:</span><strong style="color:var(--success);">Free</strong></div>
+                    </div>
+                </div>
+                <!-- Zone 3 -->
+                <div class="zone-card animate-on-scroll slide-right delay-200">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                        <div style="width:44px;height:44px;border-radius:50%;background:rgba(16,185,129,0.12);color:var(--success);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size:1.1rem;margin-bottom:2px;">Metro Extended</h3>
+                            <span class="badge badge-success">Zone C</span>
+                        </div>
+                    </div>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:16px;">Extended metro area, industrial parks, and outer suburbs within a 15–25 mile radius.</p>
+                    <div style="display:flex;flex-direction:column;gap:8px;font-size:0.85rem;">
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Response Time:</span><strong>60 minutes</strong></div>
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">ZIP Codes:</span><strong>10401–10403, 10501–10602</strong></div>
+                        <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Travel Fee:</span><strong>$15</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Van Showcase -->
+    <section class="section" id="van-showcase" style="border-top:1px solid var(--border-light);">
+        <div class="container">
+            <div class="grid-2" style="align-items:center;gap:48px;">
+                <div class="animate-on-scroll slide-left">
+                    <span class="section-label">Our Mobile Unit</span>
+                    <h2>Fully-Equipped Workshop on Wheels</h2>
+                    <p style="color:var(--text-muted);margin-bottom:24px;">Our custom-built mobile service van carries all the professional-grade equipment needed for a complete headlight restoration — power tools, multiple grits of wet sandpaper, cutting and finishing compounds, UV ceramic coating, and more.</p>
+                    <div style="display:flex;flex-direction:column;gap:12px;">
+                        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;">
+                            <i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Professional DA polisher & compounds
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;">
+                            <i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Full wet sanding kit (800–3000 grit)
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;">
+                            <i class="fa-solid fa-circle-check" style="color:var(--success);"></i> UV ceramic coating system
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;">
+                            <i class="fa-solid fa-circle-check" style="color:var(--success);"></i> Generator-powered, fully self-sufficient
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll slide-right" style="display:flex;justify-content:center;">
+                    <img src="assets/images/service-van.png" alt="LensGlow mobile service van" style="border-radius:var(--radius-xl);box-shadow:0 12px 30px var(--shadow-cool);max-height:380px;object-fit:cover;" class="float-rotate-element">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Fleet Logistics & Operational FAQ -->
+    <section class="section" id="logistics-faq" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">Logistics FAQ</span>
+                <h2>Mobile Operations & Requirements</h2>
+                <p>Learn how our mobile unit operates on-site and what is needed for a successful driveway restoration.</p>
+            </div>
+            <div class="accordion animate-on-scroll zoom-in" style="max-width:720px;margin:32px auto 0;">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question" style="color:var(--primary);margin-right:10px;"></i> What are the space requirements for mobile service?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            We require a flat driveway, parking space, or a secure street parking area with at least **3 feet of clearance** around the front of your vehicle. This allows our technicians to safely maneuver sanding blocks and high-speed polishers around the headlights.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question" style="color:var(--primary);margin-right:10px;"></i> Do I need to provide power or water?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            No! Our custom mobile service vans are **completely self-powered** and carry onboard electrical generators and clean pressurized water tanks. We do not require access to your household electricity or outdoor spigots.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question" style="color:var(--primary);margin-right:10px;"></i> What happens if it rains on my appointment day?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            Since the UV ceramic coating requires a completely dry environment to cure properly, severe rain or high winds may require us to set up a temporary canopy or reschedule your appointment. If you have a home garage or carport, we can proceed regardless of weather.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dispatch Hub Locations -->
+    <section class="section" id="dispatch-hubs" style="background:var(--surface);border-top:1px solid var(--border-light);">
+        <style>
+            .hub-card-sky {
+                border: 1px solid rgba(14, 165, 233, 0.12) !important;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            }
+            .hub-card-sky:hover {
+                border-color: rgba(14, 165, 233, 0.5) !important;
+                box-shadow: 0 15px 30px rgba(14, 165, 233, 0.15) !important;
+                transform: translateY(-8px) scale(1.015) !important;
+            }
+            .hub-card-amber {
+                border: 1px solid rgba(245, 158, 11, 0.12) !important;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            }
+            .hub-card-amber:hover {
+                border-color: rgba(245, 158, 11, 0.5) !important;
+                box-shadow: 0 15px 30px rgba(245, 158, 11, 0.15) !important;
+                transform: translateY(-8px) scale(1.015) !important;
+            }
+            .hub-card-emerald {
+                border: 1px solid rgba(16, 185, 129, 0.12) !important;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            }
+            .hub-card-emerald:hover {
+                border-color: rgba(16, 185, 129, 0.5) !important;
+                box-shadow: 0 15px 30px rgba(16, 185, 129, 0.15) !important;
+                transform: translateY(-8px) scale(1.015) !important;
+            }
+        </style>
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">Fleet Hubs</span>
+                <h2 class="text-3xl font-extrabold" style="font-family:'Outfit',sans-serif;">Our Dispatch Hub Locations</h2>
+                <p>We deploy our mobile restoration units from three regional dispatch hubs to ensure rapid same-day travel across the metro area.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Hub 1 -->
+                <div class="p-6 rounded-2xl border-t-4 border-t-sky-500 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between h-full hub-card-sky">
+                    <div>
+                        <div class="flex items-center gap-3.5 mb-4">
+                            <div style="width:40px;height:40px;border-radius:10px;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:bold;">
+                                <i class="fa-solid fa-building-flag"></i>
+                            </div>
+                            <h3 class="text-md font-bold" style="font-family:'Outfit',sans-serif;">Downtown Core Hub</h3>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                            Serves Zone A. Base station on 2nd Avenue optimized for narrow streets, tight underground garages, and corporate office parks.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-100 dark:border-slate-800/60 pt-4 mb-6">
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Coverage Radius:</span><strong class="text-slate-700 dark:text-slate-300">5 Miles</strong></div>
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Avg. Travel Time:</span><strong class="text-sky-500">30 Mins Guaranteed</strong></div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center justify-between text-[10px] font-bold text-sky-500 uppercase tracking-widest bg-sky-500/10 px-3 py-1.5 rounded-full w-full">
+                        <span>Status: Active</span>
+                        <span>4 Mobile Vans</span>
+                    </span>
+                </div>
+                <!-- Hub 2 -->
+                <div class="p-6 rounded-2xl border-t-4 border-t-amber-500 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between h-full hub-card-amber">
+                    <div>
+                        <div class="flex items-center gap-3.5 mb-4">
+                            <div style="width:40px;height:40px;border-radius:10px;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:bold;">
+                                <i class="fa-solid fa-tree-city"></i>
+                            </div>
+                            <h3 class="text-md font-bold" style="font-family:'Outfit',sans-serif;">Northside Suburban Hub</h3>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                            Serves Zone B. Stationed off Highway 101 for rapid access to expansive suburban driveways, residential cul-de-sacs, and local retail centers.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-100 dark:border-slate-800/60 pt-4 mb-6">
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Coverage Radius:</span><strong class="text-slate-700 dark:text-slate-300">15 Miles</strong></div>
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Avg. Travel Time:</span><strong class="text-amber-500">45 Mins Guaranteed</strong></div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center justify-between text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-3 py-1.5 rounded-full w-full">
+                        <span>Status: Active</span>
+                        <span>3 Mobile Vans</span>
+                    </span>
+                </div>
+                <!-- Hub 3 -->
+                <div class="p-6 rounded-2xl border-t-4 border-t-emerald-500 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between h-full hub-card-emerald">
+                    <div>
+                        <div class="flex items-center gap-3.5 mb-4">
+                            <div style="width:40px;height:40px;border-radius:10px;background:rgba(16,185,129,0.12);color:#10B981;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:bold;">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </div>
+                            <h3 class="text-md font-bold" style="font-family:'Outfit',sans-serif;">Eastside Industrial Hub</h3>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                            Serves Zone C & Commercial fleets. Deep depot near logistics zones, ready for bulk fleet scheduling, heavy trucks, and dealership blocks.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-100 dark:border-slate-800/60 pt-4 mb-6">
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Coverage Radius:</span><strong class="text-slate-700 dark:text-slate-300">25 Miles</strong></div>
+                            <div class="flex justify-between text-[11px]"><span class="text-slate-400">Avg. Travel Time:</span><strong class="text-emerald-500">60 Mins Guaranteed</strong></div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center justify-between text-[10px] font-bold text-emerald-500 uppercase tracking-widest bg-emerald-500/10 px-3 py-1.5 rounded-full w-full">
+                        <span>Status: Active</span>
+                        <span>5 Mobile Vans</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

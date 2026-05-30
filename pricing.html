@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensGlow pricing — transparent headlight restoration pricing with interactive calculator. Basic, Standard, and Premium plans with UV protection options.">
+    <title>Pricing & Calculator | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="navbar-container"></div>
+
+    <!-- Page Hero -->
+    <section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container">
+            <nav style="font-size:0.85rem;margin-bottom:16px;color:rgba(255,255,255,0.6);">
+                <a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <span style="color:var(--primary-light);">Pricing</span>
+            </nav>
+            <h1 style="font-size:2.6rem;color:#fff;margin-bottom:12px;">Simple, Transparent Pricing</h1>
+            <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;">Choose the plan that fits your needs. No hidden fees, satisfaction guaranteed.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="section" id="pricing-cards">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Basic -->
+                <div class="pricing-card animate-on-scroll slide-left" id="plan-basic">
+                    <h3>Basic</h3>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:8px;">Essential restoration</p>
+                    <div class="price">$79<span>/pair</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Both headlights</li>
+                        <li><i class="fa-solid fa-check"></i> Surface-level polishing</li>
+                        <li><i class="fa-solid fa-check"></i> Oxidation removal</li>
+                        <li><i class="fa-solid fa-check"></i> 30-day satisfaction guarantee</li>
+                        <li><i class="fa-solid fa-check"></i> Mobile service included</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-secondary btn-full" id="plan-basic-btn">Get Started</a>
+                </div>
+                <!-- Popular -->
+                <div class="pricing-card popular animate-on-scroll zoom-in" id="plan-standard">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:8px;">Best value restoration</p>
+                    <div class="price">$129<span>/pair</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Both headlights</li>
+                        <li><i class="fa-solid fa-check"></i> Multi-stage wet sanding</li>
+                        <li><i class="fa-solid fa-check"></i> Compound polishing</li>
+                        <li><i class="fa-solid fa-check"></i> UV ceramic coating</li>
+                        <li><i class="fa-solid fa-check"></i> 2-year warranty</li>
+                        <li><i class="fa-solid fa-check"></i> Mobile service included</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-primary btn-full" id="plan-standard-btn">Choose Standard</a>
+                </div>
+                <!-- Premium -->
+                <div class="pricing-card animate-on-scroll slide-right" id="plan-premium">
+                    <h3>Premium</h3>
+                    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:8px;">Complete lens overhaul</p>
+                    <div class="price">$199<span>/pair</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> All headlights & fog lights</li>
+                        <li><i class="fa-solid fa-check"></i> Premium multi-stage restoration</li>
+                        <li><i class="fa-solid fa-check"></i> Micro-scratch polishing</li>
+                        <li><i class="fa-solid fa-check"></i> UV ceramic coating (premium)</li>
+                        <li><i class="fa-solid fa-check"></i> 2-year warranty</li>
+                        <li><i class="fa-solid fa-check"></i> Before/after photos</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-secondary btn-full" id="plan-premium-btn">Go Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="section" id="comparison" style="background:var(--warm-white);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Compare Plans</span>
+                <h2>Feature Comparison</h2>
+            </div>
+            <div style="overflow-x:auto;" class="animate-on-scroll">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th style="text-align:center;">Basic</th>
+                            <th style="text-align:center;">Standard</th>
+                            <th style="text-align:center;">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Headlight restoration</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td></tr>
+                        <tr><td>Multi-stage wet sanding</td><td style="text-align:center;"><i class="fa-solid fa-xmark" style="color:var(--error);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td></tr>
+                        <tr><td>Compound polishing</td><td style="text-align:center;">Basic</td><td style="text-align:center;">Advanced</td><td style="text-align:center;">Premium</td></tr>
+                        <tr><td>UV ceramic coating</td><td style="text-align:center;"><i class="fa-solid fa-xmark" style="color:var(--error);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td></tr>
+                        <tr><td>Fog lights included</td><td style="text-align:center;"><i class="fa-solid fa-xmark" style="color:var(--error);"></i></td><td style="text-align:center;"><i class="fa-solid fa-xmark" style="color:var(--error);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td></tr>
+                        <tr><td>Warranty</td><td style="text-align:center;">30 days</td><td style="text-align:center;">2 years</td><td style="text-align:center;">2 years</td></tr>
+                        <tr><td>Before/after photos</td><td style="text-align:center;"><i class="fa-solid fa-xmark" style="color:var(--error);"></i></td><td style="text-align:center;"><i class="fa-solid fa-xmark" style="color:var(--error);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td></tr>
+                        <tr><td>Mobile service</td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td><td style="text-align:center;"><i class="fa-solid fa-check" style="color:var(--success);"></i></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Calculator -->
+    <section class="section" id="calculator">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Price Calculator</span>
+                <h2>Estimate Your Total</h2>
+                <p>Select your vehicle type, service, and add-ons to get an instant price estimate.</p>
+            </div>
+            <div class="calc-card animate-on-scroll zoom-in" style="max-width:600px;margin:0 auto;" id="price-calculator">
+                <div class="form-group">
+                    <label for="calc-vehicle">Vehicle Type</label>
+                    <select class="calc-select" id="calc-vehicle">
+                        <option value="sedan">Sedan / Compact</option>
+                        <option value="suv">SUV / Crossover (+15%)</option>
+                        <option value="truck">Truck / Van (+25%)</option>
+                        <option value="luxury">Luxury / Sports (+40%)</option>
+                        <option value="fleet">Fleet Vehicle (-15%)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="calc-service">Service</label>
+                    <select class="calc-select" id="calc-service">
+                        <option value="headlight-basic">Basic Headlight Restoration — $79</option>
+                        <option value="headlight-standard" selected>Standard Restoration + UV Coating — $129</option>
+                        <option value="headlight-premium">Premium Full Lens Overhaul — $199</option>
+                        <option value="taillight">Tail Light Restoration — $89</option>
+                        <option value="foglight">Fog Light Restoration — $69</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Add-Ons</label>
+                    <div style="display:flex;flex-direction:column;gap:10px;">
+                        <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;cursor:pointer;">
+                            <input type="checkbox" class="calc-addon" data-price="49" style="accent-color:var(--primary);width:18px;height:18px;">
+                            UV Ceramic Coating (+$49)
+                        </label>
+                        <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;cursor:pointer;">
+                            <input type="checkbox" class="calc-addon" data-price="39" style="accent-color:var(--primary);width:18px;height:18px;">
+                            Interior Light Cleaning (+$39)
+                        </label>
+                        <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;cursor:pointer;">
+                            <input type="checkbox" class="calc-addon" data-price="29" style="accent-color:var(--primary);width:18px;height:18px;">
+                            Headlight Sealant Touch-Up (+$29)
+                        </label>
+                    </div>
+                </div>
+                <div class="calc-result">
+                    <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:2px;opacity:0.8;margin-bottom:4px;">Estimated Total</div>
+                    <div class="calc-total" id="calc-total">$129</div>
+                    <div style="font-size:0.85rem;opacity:0.8;margin-top:4px;">Both headlights • Mobile service included</div>
+                </div>
+                <a href="booking.html" class="btn btn-primary btn-full btn-lg" style="margin-top:20px;">Book at This Price</a>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- DIY vs Professional Cost Analysis -->
+    <section class="section" id="diy-vs-pro" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">Smart Investment</span>
+                <h2>DIY Kits vs. Professional Restoration vs. Replacement</h2>
+                <p>Replacing headlights can cost over $500 per unit, while cheap DIY kits degrade lenses in the long run. Here is the financial breakdown.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+                <!-- DIY -->
+                <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+                    <h3 class="text-lg font-bold mb-2 text-red-500" style="font-family:'Outfit',sans-serif;">Cheap DIY Aerosol Kits</h3>
+                    <div class="text-2xl font-extrabold mb-4 text-slate-800 dark:text-white">$25 - $40 <span class="text-xs font-normal text-slate-400">initial cost</span></div>
+                    <ul class="space-y-3 text-xs text-slate-500 dark:text-slate-400 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> No professional wet sanding tools</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> Cheap clear lacquer prone to yellowing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> Resto lasts 2-3 months before failing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> Prone to chemical burns on paint</li>
+                    </ul>
+                    <span class="inline-block text-[10px] font-bold text-red-500 uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full">Longevity: 90 Days Max</span>
+                </div>
+                <!-- LensGlow -->
+                <div class="p-8 rounded-3xl border-2 border-sky-500 bg-white dark:bg-slate-900 relative shadow-lg">
+                    <div class="absolute -top-3.5 left-6 bg-sky-500 text-white text-[9px] uppercase tracking-widest font-black px-3.5 py-1 rounded-full">Smart Choice</div>
+                    <h3 class="text-lg font-bold mb-2 text-sky-500" style="font-family:'Outfit',sans-serif;">LensGlow Professional</h3>
+                    <div class="text-2xl font-extrabold mb-4 text-slate-800 dark:text-white">$79 - $129 <span class="text-xs font-normal text-slate-400">delivered to you</span></div>
+                    <ul class="space-y-3 text-xs text-slate-500 dark:text-slate-400 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Progressive multi-stage wet sanding</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Professional cross-linked UV coating</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Guaranteed clarity for 2 full years</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Done safely in under 45 minutes</li>
+                    </ul>
+                    <span class="inline-block text-[10px] font-bold text-emerald-500 uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full">Longevity: 2 Years Guaranteed</span>
+                </div>
+                <!-- Replacement -->
+                <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+                    <h3 class="text-lg font-bold mb-2 text-slate-500" style="font-family:'Outfit',sans-serif;">Full Lens Replacement</h3>
+                    <div class="text-2xl font-extrabold mb-4 text-slate-800 dark:text-white">$400 - $1,500 <span class="text-xs font-normal text-slate-400">parts + bumper labor</span></div>
+                    <ul class="space-y-3 text-xs text-slate-500 dark:text-slate-400 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> Requires complete front bumper removal</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> Massive ecological and landfill waste</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-red-500"></i> Extremely expensive dealership markup</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Replaced with factory-new components</li>
+                    </ul>
+                    <span class="inline-block text-[10px] font-bold text-slate-500 uppercase tracking-widest bg-slate-500/10 px-3 py-1 rounded-full">Longevity: 5+ Years</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet & Commercial Volume Contract Pricing -->
+    <section class="section" id="fleet-commercial-pricing" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="space-y-6">
+                    <span class="section-label"><i class="fa-solid fa-truck-moving" style="margin-right:6px;"></i> Volume Discounts</span>
+                    <h2 class="text-3xl font-extrabold" style="font-family:'Outfit',sans-serif;">Fleet & Commercial Volume Pricing</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        We work directly with logistics fleets, taxi companies, rental car services, and used car dealerships. Maintain safety compliance, pass state inspections, and maximize your inventory value with our mobile restoration services.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                        <!-- Card 1 -->
+                        <div class="p-6 rounded-2xl border-l-4 border-l-sky-500 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex items-center gap-2.5 mb-3 text-sky-500">
+                                <i class="fa-solid fa-car-side text-lg"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">5-10 Vehicles</span>
+                            </div>
+                            <div class="text-3xl font-black text-slate-800 dark:text-white mb-2">10% OFF</div>
+                            <p class="text-xs text-slate-400 dark:text-slate-500">Perfect for small business fleets and local automotive dealerships.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="p-6 rounded-2xl border-l-4 border-l-emerald-500 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex items-center gap-2.5 mb-3 text-emerald-500">
+                                <i class="fa-solid fa-truck text-lg"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">11+ Vehicles</span>
+                            </div>
+                            <div class="text-3xl font-black text-slate-800 dark:text-white mb-2">15% OFF</div>
+                            <p class="text-xs text-slate-400 dark:text-slate-500">Dedicated dispatch routing, bulk discount contracts, and corporate terms.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Visual Table -->
+                <div class="p-8 rounded-3xl border border-sky-500/10 bg-slate-900 text-white shadow-2xl relative overflow-hidden group">
+                    <!-- Subtle background blur effect -->
+                    <div class="absolute -right-16 -top-16 w-36 h-36 bg-sky-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+                    <div class="absolute -left-16 -bottom-16 w-36 h-36 bg-emerald-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+                    
+                    <h3 class="text-xs font-black text-sky-400 uppercase tracking-widest text-center mb-6" style="font-family:'Outfit',sans-serif;">Volume Scheduling Perks</h3>
+                    <ul class="space-y-4 relative z-10 mb-8">
+                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
+                            <div class="w-5 h-5 rounded-full bg-emerald-500/15 text-emerald-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                            <span><strong>Zero Downtime:</strong> We restore headlights on-site at your facility during off-hours.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
+                            <div class="w-5 h-5 rounded-full bg-emerald-500/15 text-emerald-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                            <span><strong>Consolidated Invoicing:</strong> Monthly purchase order billing and transparent fleet accounts.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
+                            <div class="w-5 h-5 rounded-full bg-emerald-500/15 text-emerald-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                            <span><strong>Extended Fleets Warranty:</strong> Dedicated safety warranties on all commercial operations.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
+                            <div class="w-5 h-5 rounded-full bg-emerald-500/15 text-emerald-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                            <span><strong>Dedicated Dispatch Account:</strong> Direct booking hotlines and customer success representatives.</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary btn-full btn-lg btn-shine relative z-10 font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-file-invoice-dollar mr-2"></i> Request Commercial Proposal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Money Back Guarantee -->
+    <section class="section" id="guarantee" style="text-align:center;background:var(--warm-white);">
+        <div class="container animate-on-scroll">
+            <div style="display:inline-flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius-xl);padding:28px 40px;box-shadow:0 4px 20px var(--shadow-base);flex-wrap:wrap;justify-content:center;">
+                <div style="width:56px;height:56px;border-radius:50%;background:rgba(16,185,129,0.12);color:var(--success);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div style="text-align:left;">
+                    <h3 style="font-size:1.15rem;margin-bottom:4px;font-family:'Outfit',sans-serif;">100% Satisfaction Guarantee</h3>
+                    <p style="font-size:0.9rem;color:var(--text-muted);">Not satisfied with the results? We'll redo the service at no charge — no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

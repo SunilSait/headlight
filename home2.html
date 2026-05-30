@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensGlow Premium — Experience next-level headlight restoration with UV ceramic technology. Mobile service, 2-year warranty, instant booking.">
+    <title>Premium Experience | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <div id="navbar-container"></div>
+
+    <!-- Premium Hero with Glassmorphism -->
+    <section class="hero" id="hero-premium" style="min-height:100vh;">
+        <div class="hero-bg">
+            <img src="assets/images/hero-premium.png" alt="Luxury car with crystal clear headlights at night">
+        </div>
+        <div class="hero-overlay" style="background:linear-gradient(160deg, rgba(2,6,23,0.92) 0%, rgba(2,6,23,0.80) 45%, rgba(2,6,23,0.75) 100%);"></div>
+        <div class="container" style="position:relative;z-index:2;">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="section-label" style="color:#38BDF8;"><i class="fa-solid fa-diamond" style="margin-right:6px;"></i> Premium Experience</span>
+                    <h1 style="font-size:3.6rem;color:#fff;margin-bottom:20px;line-height:1.1;font-weight:800;animation:fadeSlideUp 0.8s ease-out;">
+                        Headlights That<br><span class="text-sky-400">Outshine</span> the Rest
+                    </h1>
+                    <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;margin-bottom:32px;max-width:480px;animation:fadeSlideUp 0.8s ease-out 0.15s both;">
+                        Professional-grade headlight restoration delivered to your doorstep. Our proprietary UV ceramic technology restores, protects, and transforms your headlights to factory-new clarity.
+                    </p>
+                    <div style="display:flex;gap:14px;flex-wrap:wrap;animation:fadeSlideUp 0.8s ease-out 0.3s both;">
+                        <a href="booking.html" class="btn btn-primary btn-lg btn-shine">Get Started Today</a>
+                        <a href="services.html" class="btn btn-lg" style="color:#fff;border:2px solid rgba(255,255,255,0.4);border-radius:10px;">Explore Services</a>
+                    </div>
+                    <!-- Trust badges -->
+                    <div style="display:flex;gap:24px;margin-top:36px;flex-wrap:wrap;animation:fadeSlideUp 0.8s ease-out 0.45s both;">
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <i class="fa-solid fa-shield-halved text-sky-400"></i>
+                            <span style="color:rgba(255,255,255,0.7);font-size:0.85rem;">2-Year Warranty</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <i class="fa-solid fa-truck-fast text-sky-400"></i>
+                            <span style="color:rgba(255,255,255,0.7);font-size:0.85rem;">Mobile Service</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <i class="fa-solid fa-clock text-sky-400"></i>
+                            <span style="color:rgba(255,255,255,0.7);font-size:0.85rem;">Same-Day Available</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Glassmorphism Card -->
+                <div class="hidden lg:block" style="animation:fadeSlideUp 0.8s ease-out 0.3s both;">
+                    <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.12);border-radius:24px;padding:36px;box-shadow:0 24px 48px rgba(0,0,0,0.2);">
+                        <div style="text-align:center;margin-bottom:24px;">
+                            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.5);margin-bottom:8px;">Starting From</div>
+                            <div style="font-size:3.5rem;font-weight:800;color:#38BDF8;font-family:'Outfit',sans-serif;">$79</div>
+                            <div style="color:rgba(255,255,255,0.6);font-size:0.85rem;">Both headlights • Any vehicle</div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+                            <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.8);font-size:0.9rem;">
+                                <i class="fa-solid fa-check-circle text-emerald-400" style="flex-shrink:0;"></i> Multi-stage wet sanding & polishing
+                            </div>
+                            <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.8);font-size:0.9rem;">
+                                <i class="fa-solid fa-check-circle text-emerald-400" style="flex-shrink:0;"></i> UV ceramic protective coating
+                            </div>
+                            <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.8);font-size:0.9rem;">
+                                <i class="fa-solid fa-check-circle text-emerald-400" style="flex-shrink:0;"></i> 2-year clarity warranty
+                            </div>
+                            <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.8);font-size:0.9rem;">
+                                <i class="fa-solid fa-check-circle text-emerald-400" style="flex-shrink:0;"></i> Done at your location in 45 min
+                            </div>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-full btn-lg btn-shine">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Feature Grid -->
+    <section class="section" id="premium-features" style="background:var(--warm-white);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label"><i class="fa-solid fa-gem" style="margin-right:6px;"></i> Premium Services</span>
+                <h2>Comprehensive Headlight Solutions</h2>
+                <p>Every aspect of your headlight lens, expertly restored and protected.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Feature 1 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll slide-left">
+                    <img src="assets/images/headlight-restore.png" alt="Headlight restoration" class="w-full md:w-48 h-32 object-cover rounded-xl flex-shrink-0">
+                    <div>
+                        <h3 class="text-lg font-bold mb-2" style="font-family:'Outfit',sans-serif;">Full Headlight Restoration</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Complete multi-stage restoration including wet sanding, compound polishing, and sealing for severely oxidized headlights.</p>
+                        <a href="services.html" class="inline-flex items-center gap-1 text-sky-500 text-sm font-semibold mt-3 hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll slide-right">
+                    <img src="assets/images/uv-coating.png" alt="UV ceramic coating" class="w-full md:w-48 h-32 object-cover rounded-xl flex-shrink-0">
+                    <div>
+                        <h3 class="text-lg font-bold mb-2" style="font-family:'Outfit',sans-serif;">UV Ceramic Coating</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Professional-grade UV-blocking ceramic sealant that prevents re-oxidation for years. Includes our comprehensive 2-year warranty.</p>
+                        <a href="services.html" class="inline-flex items-center gap-1 text-sky-500 text-sm font-semibold mt-3 hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll slide-left delay-100">
+                    <img src="assets/images/tail-light.png" alt="Tail light restoration" class="w-full md:w-48 h-32 object-cover rounded-xl flex-shrink-0">
+                    <div>
+                        <h3 class="text-lg font-bold mb-2" style="font-family:'Outfit',sans-serif;">Tail & Fog Light Restoration</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Not just headlights — we restore all exterior light lenses including tail lights, fog lights, turn signal housings and warranty.</p>
+                        <a href="services.html" class="inline-flex items-center gap-1 text-sky-500 text-sm font-semibold mt-3 hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll slide-right delay-100">
+                    <img src="assets/images/fleet-service.png" alt="Fleet services" class="w-full md:w-48 h-32 object-cover rounded-xl flex-shrink-0">
+                    <div>
+                        <h3 class="text-lg font-bold mb-2" style="font-family:'Outfit',sans-serif;">Fleet & Dealership Services</h3>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Volume pricing for dealerships, rental agencies, and fleet operators. On-site mobile service with minimal vehicle downtime.</p>
+                        <a href="services.html" class="inline-flex items-center gap-1 text-sky-500 text-sm font-semibold mt-3 hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UV Protection Warranty Showcase -->
+    <section class="section" id="warranty-showcase" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container">
+            <div class="grid-2" style="align-items:center;gap:48px;">
+                <div class="animate-on-scroll slide-left" style="position:relative;display:flex;justify-content:center;">
+                    <!-- Shield visual -->
+                    <div style="position:relative;">
+                        <div style="width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,rgba(14,165,233,0.1),rgba(245,158,11,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto;animation:pulse-glow 3s ease-in-out infinite;">
+                            <div style="width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,rgba(14,165,233,0.15),rgba(245,158,11,0.15));display:flex;align-items:center;justify-content:center;border:2px solid rgba(14,165,233,0.2);">
+                                <div style="text-align:center;">
+                                    <i class="fa-solid fa-shield-halved" style="font-size:3rem;color:var(--primary);margin-bottom:8px;display:block;"></i>
+                                    <div style="font-size:2rem;font-weight:800;color:var(--primary);font-family:'Outfit',sans-serif;">2 YEAR</div>
+                                    <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);font-weight:600;">UV Warranty</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll slide-right">
+                    <span class="section-label"><i class="fa-solid fa-shield-halved" style="margin-right:6px;"></i> UV Protection Warranty</span>
+                    <h2>Your Headlights, Protected for Years</h2>
+                    <p style="margin-bottom:20px;color:var(--text-muted);">Our proprietary UV ceramic coating creates an invisible shield that blocks 99.5% of harmful UV rays — the primary cause of headlight oxidation and yellowing.</p>
+                    <div style="display:flex;flex-direction:column;gap:16px;">
+                        <div style="display:flex;gap:12px;align-items:start;">
+                            <div style="width:36px;height:36px;border-radius:8px;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0;">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.9rem;font-weight:700;margin-bottom:2px;">Anti-Oxidation Shield</h4>
+                                <p style="font-size:0.82rem;color:var(--text-muted);">Prevents yellowing and hazing from UV exposure and environmental contaminants.</p>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:12px;align-items:start;">
+                            <div style="width:36px;height:36px;border-radius:8px;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0;">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.9rem;font-weight:700;margin-bottom:2px;">Hydrophobic Surface</h4>
+                                <p style="font-size:0.82rem;color:var(--text-muted);">Water beads off naturally, keeping lenses cleaner between washes.</p>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:12px;align-items:start;">
+                            <div style="width:36px;height:36px;border-radius:8px;background:rgba(16,185,129,0.12);color:var(--success);display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0;">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.9rem;font-weight:700;margin-bottom:2px;">Transferable Warranty</h4>
+                                <p style="font-size:0.82rem;color:var(--text-muted);">Warranty transfers with vehicle ownership — adds value at resale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Testimonials -->
+    <section class="section" id="premium-testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Client Stories</span>
+                <h2>What Our Premium Clients Say</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll slide-left" style="border-left:4px solid var(--primary);padding:32px;">
+                    <div style="color:var(--warning);margin-bottom:12px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-style:italic;font-size:0.95rem;margin-bottom:20px;line-height:1.7;">"The mobile service is a game-changer. They restored both headlights in my driveway while I worked from home. The UV coating looks incredible — like glass."</p>
+                    <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
+                        <div style="width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SK</div>
+                        <div>
+                            <h4 style="font-size:0.9rem;font-weight:700;">Sarah Keating</h4>
+                            <span style="font-size:0.75rem;color:var(--text-muted);">2020 BMW X5 Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll zoom-in delay-100" style="border-left:4px solid var(--warning);padding:32px;">
+                    <div style="color:var(--warning);margin-bottom:12px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-style:italic;font-size:0.95rem;margin-bottom:20px;line-height:1.7;">"Our dealership uses LensGlow for all pre-owned inventory. The results are phenomenal and the fleet pricing makes it a no-brainer. 5 stars every time."</p>
+                    <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
+                        <div style="width:44px;height:44px;border-radius:50%;background:var(--warning);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">DL</div>
+                        <div>
+                            <h4 style="font-size:0.9rem;font-weight:700;">David Liu</h4>
+                            <span style="font-size:0.75rem;color:var(--text-muted);">GM, Premier Auto Group</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll slide-right delay-200" style="border-left:4px solid var(--success);padding:32px;">
+                    <div style="color:var(--warning);margin-bottom:12px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-style:italic;font-size:0.95rem;margin-bottom:20px;line-height:1.7;">"I drive a lot at night for work. The difference is night and day — literally. My headlights throw so much more light now. Best money I've ever spent on my car."</p>
+                    <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
+                        <div style="width:44px;height:44px;border-radius:50%;background:var(--success);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">MT</div>
+                        <div>
+                            <h4 style="font-size:0.9rem;font-weight:700;">Maria Torres</h4>
+                            <span style="font-size:0.75rem;color:var(--text-muted);">Rideshare Driver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Science & Technology Breakdown -->
+    <section class="section" id="science-tech" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label"><i class="fa-solid fa-microscope" style="margin-right:6px;"></i> Optical Physics</span>
+                <h2>The Science of Headlight Degradation & Restoration</h2>
+                <p>Understanding why headlights fade, and how our professional restoration process chemically cures polycarbonate lenses back to factory-new clarity.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Tech Step 1 -->
+                <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div style="width:48px;height:48px;border-radius:12px;background:rgba(239,68,68,0.1);color:#EF4444;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px;">
+                        <i class="fa-solid fa-radiation"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Outfit',sans-serif;">1. Polycarbonate UV Degradation</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Modern headlight lenses are manufactured from polycarbonate plastic. When exposed to solar UV radiation and atmospheric oxygen, the polymer chains break down, creating micro-cracks that scatter light and turn lenses yellow and hazy.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-red-500 uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full">Phase: Oxidation</span>
+                </div>
+                <!-- Tech Step 2 -->
+                <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div style="width:48px;height:48px;border-radius:12px;background:rgba(14,165,233,0.1);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px;">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Outfit',sans-serif;">2. Micro-Refraction Recovery</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Our technicians use progressive wet sanding grids (from 800 to 3000 grit) to physically shave off the microscopic layer of dead plastic. This is followed by polishing with cutting-edge micro-abrasives to align the lens surface perfectly.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-sky-500 uppercase tracking-widest bg-sky-500/10 px-3 py-1 rounded-full">Phase: Optical Alignment</span>
+                </div>
+                <!-- Tech Step 3 -->
+                <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div style="width:48px;height:48px;border-radius:12px;background:rgba(16,185,129,0.1);color:#10B981;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px;">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Outfit',sans-serif;">3. UV-Crosslinked Polymer Seal</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Cheap DIY kits leave plastic unprotected, causing yellowing to return within weeks. We apply an industry-grade UV-cured ceramic protective coat. Solar rays trigger cross-linked polymer bonding, sealing the clarity in for years.
+                    </p>
+                    <span class="inline-block text-[11px] font-bold text-emerald-500 uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full">Phase: Molecular Shield</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OEM Clarity Scale & Performance Comparison -->
+    <section class="section" id="clarity-comparison" style="background:var(--warm-white);">
+        <div class="container animate-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="section-label"><i class="fa-solid fa-chart-simple" style="margin-right:6px;"></i> Performance Metrics</span>
+                    <h2>OEM Headlight Clarity Scale Comparison</h2>
+                    <p class="text-slate-500 dark:text-slate-400 mb-6 mt-4">
+                        Headlight clarity directly impacts safety and night-driving reaction time. A heavily oxidized lens absorbs up to 80% of light output, shortening your reaction distance by nearly 200 feet at highway speeds.
+                    </p>
+                    <div class="space-y-4">
+                        <!-- Stat 1 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                                <span>Oxidized / Hazy Lens (Typical 5+ Years Old)</span>
+                                <span class="text-red-500">20% Light Transmission</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-red-500 h-full rounded-full" style="width:20%;"></div>
+                            </div>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                                <span>Standard Restored (No UV Sealant)</span>
+                                <span class="text-amber-500">75% Light Transmission</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-amber-500 h-full rounded-full" style="width:75%;"></div>
+                            </div>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                                <span>LensGlow Restored (Multi-stage + UV Shield)</span>
+                                <span class="text-emerald-500">98% Light Transmission</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-emerald-500 h-full rounded-full" style="width:98%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comparison matrix -->
+                <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                    <h3 class="text-md font-bold mb-6 text-center uppercase tracking-widest text-slate-400" style="font-family:'Outfit',sans-serif;">Optical Performance Comparison</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-slate-200/50 dark:border-slate-800">
+                            <span class="text-sm font-semibold">Clarity Rating</span>
+                            <span class="text-xs uppercase px-2.5 py-0.5 rounded font-bold bg-emerald-500/10 text-emerald-500">Class A (SAE Metric)</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-slate-200/50 dark:border-slate-800">
+                            <span class="text-sm font-semibold">Max Illumination (Lux)</span>
+                            <span class="text-sm font-bold">450+ Lux <span class="text-xs font-normal text-slate-500">(Factory OEM Standard)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-slate-200/50 dark:border-slate-800">
+                            <span class="text-sm font-semibold">Visibility Distance</span>
+                            <span class="text-sm font-bold text-emerald-500">320 Feet <span class="text-xs font-normal text-slate-500">(+180% vs Oxidized)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-slate-200/50 dark:border-slate-800">
+                            <span class="text-sm font-semibold">Reaction Window</span>
+                            <span class="text-sm font-bold">4.2 Seconds <span class="text-xs font-normal text-slate-500">at 60 MPH</span></span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <span class="text-sm font-semibold">Lifespan Guarantee</span>
+                            <span class="text-sm font-bold text-amber-500">24 Months UV Protected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA with Quick Booking -->
+    <section class="section" id="premium-cta" style="background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container animate-on-scroll">
+            <span class="section-label" style="color:rgba(255,255,255,0.7);">Premium Service Awaits</span>
+            <h2 style="color:#fff;font-size:2.4rem;margin-bottom:12px;">Experience the LensGlow Difference</h2>
+            <p style="color:rgba(255,255,255,0.85);max-width:540px;margin:0 auto 32px;font-size:1.05rem;">Book your premium headlight restoration and see why thousands choose LensGlow for crystal-clear results.</p>
+            <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+                <a href="booking.html" class="btn btn-lg" style="background:#fff;color:var(--primary);border-color:#fff;font-weight:700;" id="premium-cta-book">Book Premium Service</a>
+                <a href="contact.html" class="btn btn-lg" style="color:#fff;border:2px solid rgba(255,255,255,0.5);border-radius:10px;" id="premium-cta-contact">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

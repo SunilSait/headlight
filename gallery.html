@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensGlow before and after gallery — see real headlight restoration transformations. Interactive comparison sliders showing dramatic results.">
+    <title>Before & After Gallery | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="navbar-container"></div>
+
+    <!-- Page Hero -->
+    <section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container">
+            <nav style="font-size:0.85rem;margin-bottom:16px;color:rgba(255,255,255,0.6);">
+                <a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <span style="color:var(--primary-light);">Gallery</span>
+            </nav>
+            <h1 style="font-size:2.6rem;color:#fff;margin-bottom:12px;">Before & After Gallery</h1>
+            <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;">Real results from real customers. Drag the slider to reveal each transformation.</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="section" id="gallery-section">
+        <div class="container">
+            <div class="filter-tabs animate-on-scroll">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="headlights">Headlights</button>
+                <button class="filter-tab" data-filter="taillights">Tail Lights</button>
+                <button class="filter-tab" data-filter="foglights">Fog Lights</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid-2" style="gap:32px;">
+                <!-- Item 1 -->
+                <div class="animate-on-scroll slide-left" data-category="headlights">
+                    <div class="ba-slider">
+                        <img src="assets/images/before-after-1.png" alt="Before restoration - sedan headlight" class="ba-before">
+                        <img src="assets/images/before-after-1.png" alt="After restoration - sedan headlight" class="ba-after" style="filter:brightness(1.2) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                    <div style="padding:16px 0;">
+                        <h3 style="font-size:1.05rem;margin-bottom:4px;">2019 Honda Accord — Headlight Restoration</h3>
+                        <p style="font-size:0.85rem;color:var(--text-muted);">Severe UV oxidation and yellowing. Full multi-stage restoration with UV coating.</p>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                            <span class="badge badge-primary">Headlights</span>
+                            <span class="badge badge-warning">UV Coated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="animate-on-scroll slide-right" data-category="headlights">
+                    <div class="ba-slider">
+                        <img src="assets/images/before-after-2.png" alt="Before restoration - SUV headlight" class="ba-before">
+                        <img src="assets/images/before-after-2.png" alt="After restoration - SUV headlight" class="ba-after" style="filter:brightness(1.2) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                    <div style="padding:16px 0;">
+                        <h3 style="font-size:1.05rem;margin-bottom:4px;">2017 Toyota RAV4 — Full Restoration</h3>
+                        <p style="font-size:0.85rem;color:var(--text-muted);">Heavily hazed headlights with surface pitting. Complete UV seal restoration.</p>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                            <span class="badge badge-primary">Headlights</span>
+                            <span class="badge badge-success">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="animate-on-scroll slide-left delay-100" data-category="headlights">
+                    <div class="ba-slider">
+                        <img src="assets/images/before-after-3.png" alt="Before restoration - truck headlight" class="ba-before">
+                        <img src="assets/images/before-after-3.png" alt="After restoration - truck headlight" class="ba-after" style="filter:brightness(1.2) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                    <div style="padding:16px 0;">
+                        <h3 style="font-size:1.05rem;margin-bottom:4px;">2016 Ford F-150 — Truck Headlights</h3>
+                        <p style="font-size:0.85rem;color:var(--text-muted);">Heavy oxidation from sun exposure. Restored clarity improved night driving visibility.</p>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                            <span class="badge badge-primary">Headlights</span>
+                            <span class="badge badge-warning">UV Coated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 - Tail lights -->
+                <div class="animate-on-scroll slide-right delay-100" data-category="taillights">
+                    <div class="ba-slider">
+                        <img src="assets/images/tail-light.png" alt="Before tail light restoration" class="ba-before">
+                        <img src="assets/images/tail-light.png" alt="After tail light restoration" class="ba-after" style="filter:brightness(1.15) contrast(1.1) saturate(1.2);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                    <div style="padding:16px 0;">
+                        <h3 style="font-size:1.05rem;margin-bottom:4px;">2018 Chevrolet Malibu — Tail Light Restoration</h3>
+                        <p style="font-size:0.85rem;color:var(--text-muted);">Faded and scratched tail lights restored to vibrant clarity for improved rear safety visibility.</p>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                            <span class="badge badge-error">Tail Lights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 - Fog lights -->
+                <div class="animate-on-scroll slide-left delay-200" data-category="foglights">
+                    <div class="ba-slider">
+                        <img src="assets/images/fog-light.png" alt="Before fog light restoration" class="ba-before">
+                        <img src="assets/images/fog-light.png" alt="After fog light restoration" class="ba-after" style="filter:brightness(1.2) contrast(1.15);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                    <div style="padding:16px 0;">
+                        <h3 style="font-size:1.05rem;margin-bottom:4px;">2020 Subaru Outback — Fog Light Restoration</h3>
+                        <p style="font-size:0.85rem;color:var(--text-muted);">Cloudy fog light lenses polished and sealed for improved low-visibility driving performance.</p>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                            <span class="badge badge-success">Fog Lights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="animate-on-scroll slide-right delay-200" data-category="headlights">
+                    <div class="ba-slider">
+                        <img src="assets/images/headlight-restore.png" alt="Before headlight restoration" class="ba-before">
+                        <img src="assets/images/headlight-restore.png" alt="After headlight restoration" class="ba-after" style="filter:brightness(1.15) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                    <div style="padding:16px 0;">
+                        <h3 style="font-size:1.05rem;margin-bottom:4px;">2015 BMW 3 Series — Premium Restoration</h3>
+                        <p style="font-size:0.85rem;color:var(--text-muted);">Complex curved lenses carefully restored with precision. Premium UV coating applied.</p>
+                        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                            <span class="badge badge-primary">Headlights</span>
+                            <span class="badge badge-success">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Case Studies -->
+    <section class="section" id="case-studies" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">Restoration Reports</span>
+                <h2>Detailed Headlight Case Studies</h2>
+                <p>We log technical safety measurements for our fleet and retail clients. Here is the verified scientific data from three recent restorations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Case 1 -->
+                <div class="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div style="display:flex;justify-content:between;align-items:center;margin-bottom:16px;">
+                        <span class="text-xs font-bold text-sky-500 uppercase tracking-wider bg-sky-500/10 px-3 py-1 rounded-full">Case #849</span>
+                        <span class="text-[11px] text-slate-400">Restored May 2026</span>
+                    </div>
+                    <h3 class="text-md font-bold mb-1" style="font-family:'Outfit',sans-serif;">2013 Chevrolet Silverado</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Heavy commercial vehicle subject to high highway exposure. Polycarbonate was deeply yellowed and pitted with sand gravel scars.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Initial Light Output:</span><strong class="text-red-500">95 Lux (Very Poor)</strong></div>
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Restored Light Output:</span><strong class="text-emerald-500">395 Lux (OEM Spec)</strong></div>
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Night Visibility Gain:</span><strong class="text-emerald-500">+ 316% Increase</strong></div>
+                    </div>
+                </div>
+                <!-- Case 2 -->
+                <div class="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div style="display:flex;justify-content:between;align-items:center;margin-bottom:16px;">
+                        <span class="text-xs font-bold text-sky-500 uppercase tracking-wider bg-sky-500/10 px-3 py-1 rounded-full">Case #912</span>
+                        <span class="text-[11px] text-slate-400">Restored May 2026</span>
+                    </div>
+                    <h3 class="text-md font-bold mb-1" style="font-family:'Outfit',sans-serif;">2015 Mercedes-Benz E-Class</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Luxury sedan with adaptive headlights. High value assembly ($1,800 replacement cost) saved from scrap. Mild surface hazing.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Initial Light Output:</span><strong class="text-red-500">180 Lux (Moderate)</strong></div>
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Restored Light Output:</span><strong class="text-emerald-500">445 Lux (Perfect)</strong></div>
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Night Visibility Gain:</span><strong class="text-emerald-500">+ 147% Increase</strong></div>
+                    </div>
+                </div>
+                <!-- Case 3 -->
+                <div class="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div style="display:flex;justify-content:between;align-items:center;margin-bottom:16px;">
+                        <span class="text-xs font-bold text-sky-500 uppercase tracking-wider bg-sky-500/10 px-3 py-1 rounded-full">Case #762</span>
+                        <span class="text-[11px] text-slate-400">Restored April 2026</span>
+                    </div>
+                    <h3 class="text-md font-bold mb-1" style="font-family:'Outfit',sans-serif;">2018 Subaru Outback</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Frequent outdoor off-road parking. Lenses suffered from severe top-down oxidation caused by intense sunlight degradation.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-100 dark:border-slate-800 pt-4">
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Initial Light Output:</span><strong class="text-red-500">120 Lux (Poor)</strong></div>
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Restored Light Output:</span><strong class="text-emerald-500">410 Lux (Excellent)</strong></div>
+                        <div class="flex justify-between text-xs"><span class="text-slate-400">Night Visibility Gain:</span><strong class="text-emerald-500">+ 241% Increase</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clarity Journey Section -->
+    <section class="section" id="clarity-journey" style="background:var(--warm-white);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">Visual Stages</span>
+                <h2>The Lens Clarity Journey</h2>
+                <p>A microscopic view of how we treat polycarbonate material to bring dead lenses back to absolute clarity.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
+                <!-- Stage 1 -->
+                <div class="p-6 text-center rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                    <span class="inline-flex w-8 h-8 items-center justify-center rounded-full bg-red-500 text-white font-bold text-xs mb-4">01</span>
+                    <h4 class="font-bold mb-2 text-sm" style="font-family:'Outfit',sans-serif;">Oxidized & Yellow</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Polycarbonate chains are broken down. Deep surface cracks scatter light and yellowing absorbs beams.</p>
+                </div>
+                <!-- Stage 2 -->
+                <div class="p-6 text-center rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                    <span class="inline-flex w-8 h-8 items-center justify-center rounded-full bg-amber-500 text-white font-bold text-xs mb-4">02</span>
+                    <h4 class="font-bold mb-2 text-sm" style="font-family:'Outfit',sans-serif;">Shaved & Matteed</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Wet sanding removes oxidized plastic. Lenses look uniform, smooth, but frosted white and matte.</p>
+                </div>
+                <!-- Stage 3 -->
+                <div class="p-6 text-center rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                    <span class="inline-flex w-8 h-8 items-center justify-center rounded-full bg-sky-500 text-white font-bold text-xs mb-4">03</span>
+                    <h4 class="font-bold mb-2 text-sm" style="font-family:'Outfit',sans-serif;">Buffed & Polished</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Micro-abrasive polishing removes frosted matte. Mirror-like, factory-new optical clarity is restored.</p>
+                </div>
+                <!-- Stage 4 -->
+                <div class="p-6 text-center rounded-2xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+                    <span class="inline-flex w-8 h-8 items-center justify-center rounded-full bg-emerald-500 text-white font-bold text-xs mb-4">04</span>
+                    <h4 class="font-bold mb-2 text-sm" style="font-family:'Outfit',sans-serif;">Polymer Sealed</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">UV ceramic coating forms a hard, non-yellowing microscopic shield, preserving the clarity for years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Quote -->
+    <section class="section" style="background:var(--surface-alt);border-top:1px solid var(--border-light);text-align:center;">
+        <div class="container animate-on-scroll">
+            <i class="fa-solid fa-quote-left" style="font-size:2rem;color:var(--primary);opacity:0.3;margin-bottom:16px;display:block;"></i>
+            <p style="font-size:1.2rem;font-style:italic;max-width:600px;margin:0 auto 20px;line-height:1.7;">"The before and after photos don't do it justice. In person, the difference is absolutely stunning. My 8-year-old car looks brand new from the front."</p>
+            <h4 style="font-size:0.95rem;font-weight:700;">— Lisa Chen, 2016 Lexus RX Owner</h4>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background:linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container animate-on-scroll">
+            <h2 style="color:#fff;font-size:2.2rem;margin-bottom:12px;">Want Results Like These?</h2>
+            <p style="color:rgba(255,255,255,0.8);max-width:480px;margin:0 auto 28px;">Book your headlight restoration today and we'll add your transformation to our gallery.</p>
+            <a href="booking.html" class="btn btn-primary btn-lg">Book Your Restoration</a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

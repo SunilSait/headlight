@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Something bright is coming soon! LensGlow is launching new headlight restoration features. Stay tuned.">
+    <title>Coming Soon | LensGlow</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+</head>
+<body>
+    <div class="utility-page" id="page-coming-soon" style="background:linear-gradient(160deg, var(--surface) 0%, rgba(14,165,233,0.03) 100%);">
+        <!-- Top-right icons -->
+        <div class="auth-top-icons">
+            <button class="icon-btn dark-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-exchange-alt"></i></button>
+        </div>
+
+        <div class="utility-content" style="max-width:560px;">
+            <!-- Logo -->
+            <a href="index.html" style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:32px;font-family:'Outfit',sans-serif;font-weight:700;font-size:1.2rem;color:var(--text-dark);" id="logo-coming-soon">
+                <svg width="36" height="36" viewBox="0 0 100 100" fill="none">
+                    <ellipse cx="50" cy="50" rx="38" ry="32" fill="var(--logo-glass-fill)" stroke="var(--logo-primary)" stroke-width="2.5"/>
+                    <ellipse cx="50" cy="50" rx="22" ry="18" fill="var(--logo-beam-fill)" stroke="var(--logo-primary)" stroke-width="1.5"/>
+                    <circle cx="50" cy="50" r="8" fill="var(--logo-primary)" opacity="0.9"/>
+                    <circle cx="50" cy="50" r="4" fill="var(--logo-glow)"/>
+                    <path d="M68 38 L92 22" stroke="var(--logo-primary)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M72 50 L96 50" stroke="var(--logo-primary)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M68 62 L92 78" stroke="var(--logo-primary)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                </svg>
+                LensGlow
+            </a>
+
+            <!-- Glowing Headlight Illustration -->
+            <div style="margin-bottom:28px;">
+                <svg width="140" height="140" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto;animation:float 3s ease-in-out infinite;">
+                    <!-- Outer glow -->
+                    <circle cx="100" cy="100" r="80" fill="var(--logo-glass-fill)" opacity="0.3"/>
+                    <circle cx="100" cy="100" r="60" fill="var(--logo-beam-fill)" opacity="0.3"/>
+                    <!-- Headlight -->
+                    <ellipse cx="100" cy="100" rx="40" ry="32" fill="var(--logo-glass-fill)" stroke="var(--logo-primary)" stroke-width="2.5"/>
+                    <ellipse cx="100" cy="100" rx="24" ry="18" fill="var(--logo-beam-fill)" stroke="var(--logo-primary)" stroke-width="1.5"/>
+                    <circle cx="100" cy="100" r="10" fill="var(--logo-primary)" opacity="0.8"/>
+                    <circle cx="100" cy="100" r="5" fill="var(--logo-glow)"/>
+                    <!-- Bright rays -->
+                    <path d="M130 85 L165 65" stroke="var(--logo-primary)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+                    <path d="M135 100 L175 100" stroke="var(--logo-primary)" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M130 115 L165 135" stroke="var(--logo-primary)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+                    <!-- Sparkles -->
+                    <circle cx="155" cy="75" r="3" fill="var(--logo-primary)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="170" cy="100" r="2.5" fill="var(--logo-primary)" opacity="0.5">
+                        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="155" cy="128" r="3" fill="var(--logo-primary)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.8s" repeatCount="indefinite"/>
+                    </circle>
+                </svg>
+            </div>
+
+            <span class="section-label" style="font-size:0.75rem;">Coming Soon</span>
+            <h1 style="font-size:2.8rem;font-family:'Outfit',sans-serif;font-weight:800;margin-bottom:12px;line-height:1.15;">Something Bright Is<br>on the Way</h1>
+            <p style="color:var(--text-muted);font-size:1rem;margin-bottom:36px;max-width:420px;margin-left:auto;margin-right:auto;">We're working on exciting new features for LensGlow. Be the first to know when we launch.</p>
+
+            <!-- Countdown Timer -->
+            <div id="countdown-timer" style="display:flex;justify-content:center;gap:16px;margin-bottom:36px;flex-wrap:wrap;">
+                <div style="background:var(--warm-white);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:16px 20px;min-width:80px;text-align:center;box-shadow:0 2px 8px var(--shadow-base);">
+                    <div id="cd-days" style="font-size:2rem;font-weight:800;font-family:'Outfit',sans-serif;color:var(--primary);">30</div>
+                    <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);font-weight:600;">Days</div>
+                </div>
+                <div style="background:var(--warm-white);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:16px 20px;min-width:80px;text-align:center;box-shadow:0 2px 8px var(--shadow-base);">
+                    <div id="cd-hours" style="font-size:2rem;font-weight:800;font-family:'Outfit',sans-serif;color:var(--primary);">00</div>
+                    <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);font-weight:600;">Hours</div>
+                </div>
+                <div style="background:var(--warm-white);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:16px 20px;min-width:80px;text-align:center;box-shadow:0 2px 8px var(--shadow-base);">
+                    <div id="cd-mins" style="font-size:2rem;font-weight:800;font-family:'Outfit',sans-serif;color:var(--primary);">00</div>
+                    <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);font-weight:600;">Minutes</div>
+                </div>
+                <div style="background:var(--warm-white);border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:16px 20px;min-width:80px;text-align:center;box-shadow:0 2px 8px var(--shadow-base);">
+                    <div id="cd-secs" style="font-size:2rem;font-weight:800;font-family:'Outfit',sans-serif;color:var(--primary);">00</div>
+                    <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);font-weight:600;">Seconds</div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div style="max-width:400px;margin:0 auto 32px;">
+                <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:12px;">Get notified when we launch:</p>
+                <form onsubmit="event.preventDefault();this.innerHTML='<p style=\'color:var(--success);font-weight:600;text-align:center;padding:12px;\'>🎉 You\'re on the list! We\'ll notify you at launch.</p>';" style="display:flex;gap:8px;">
+                    <input type="email" class="form-input" placeholder="Enter your email" required style="flex:1;">
+                    <button type="submit" class="btn btn-primary">Notify Me</button>
+                </form>
+            </div>
+
+            <!-- Social Links -->
+            <div style="display:flex;justify-content:center;gap:12px;">
+                <a href="#" style="width:40px;height:40px;border-radius:50%;background:var(--warm-white);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:var(--transition);" class="hover:text-sky-500"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="width:40px;height:40px;border-radius:50%;background:var(--warm-white);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:var(--transition);" class="hover:text-sky-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="width:40px;height:40px;border-radius:50%;background:var(--warm-white);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:var(--transition);" class="hover:text-sky-500"><i class="fab fa-youtube"></i></a>
+                <a href="#" style="width:40px;height:40px;border-radius:50%;background:var(--warm-white);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:var(--transition);" class="hover:text-sky-500"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

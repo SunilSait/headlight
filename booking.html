@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your LensGlow headlight restoration appointment online. Select service, choose date and time, and we'll come to your location.">
+    <title>Book Appointment | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="navbar-container"></div>
+
+    <!-- Page Hero -->
+    <section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container">
+            <nav style="font-size:0.85rem;margin-bottom:16px;color:rgba(255,255,255,0.6);">
+                <a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <span style="color:var(--primary-light);">Book Appointment</span>
+            </nav>
+            <h1 style="font-size:2.6rem;color:#fff;margin-bottom:12px;">Book Your Appointment</h1>
+            <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;">Schedule your mobile headlight restoration in just a few steps.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="section" id="booking-section">
+        <div class="container">
+            <!-- Step Indicators -->
+            <div class="booking-steps animate-on-scroll">
+                <div class="booking-step active">
+                    <div class="step-num">1</div>
+                    <span class="step-label">Service</span>
+                </div>
+                <div class="booking-step">
+                    <div class="step-num">2</div>
+                    <span class="step-label">Vehicle</span>
+                </div>
+                <div class="booking-step">
+                    <div class="step-num">3</div>
+                    <span class="step-label">Schedule</span>
+                </div>
+                <div class="booking-step">
+                    <div class="step-num">4</div>
+                    <span class="step-label">Details</span>
+                </div>
+                <div class="booking-step">
+                    <div class="step-num">5</div>
+                    <span class="step-label">Confirm</span>
+                </div>
+            </div>
+
+            <div class="calc-card animate-on-scroll zoom-in" style="max-width:640px;margin:0 auto;">
+                <!-- Step 1: Select Service -->
+                <div class="booking-form-step" id="step-service">
+                    <h3 style="font-size:1.3rem;margin-bottom:20px;"><i class="fa-solid fa-wrench" style="color:var(--primary);margin-right:8px;"></i> Select Your Service</h3>
+                    <div style="display:flex;flex-direction:column;gap:12px;">
+                        <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1.5px solid var(--border-light);border-radius:var(--radius-md);cursor:pointer;transition:var(--transition);" class="hover:border-sky-500">
+                            <input type="radio" name="service" value="basic" style="accent-color:var(--primary);width:20px;height:20px;">
+                            <div>
+                                <strong>Basic Restoration — $79</strong>
+                                <p style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">Surface polishing & oxidation removal</p>
+                            </div>
+                        </label>
+                        <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1.5px solid var(--primary);border-radius:var(--radius-md);cursor:pointer;background:rgba(14,165,233,0.04);">
+                            <input type="radio" name="service" value="standard" checked style="accent-color:var(--primary);width:20px;height:20px;">
+                            <div>
+                                <strong>Standard + UV Coating — $129</strong> <span class="badge badge-primary" style="margin-left:8px;">Popular</span>
+                                <p style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">Multi-stage restoration + 2-year UV warranty</p>
+                            </div>
+                        </label>
+                        <label style="display:flex;align-items:center;gap:12px;padding:16px;border:1.5px solid var(--border-light);border-radius:var(--radius-md);cursor:pointer;transition:var(--transition);" class="hover:border-sky-500">
+                            <input type="radio" name="service" value="premium" style="accent-color:var(--primary);width:20px;height:20px;">
+                            <div>
+                                <strong>Premium Full Overhaul — $199</strong>
+                                <p style="font-size:0.8rem;color:var(--text-muted);margin-top:2px;">All lights + premium UV coating + before/after photos</p>
+                            </div>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary btn-full btn-next-step" style="margin-top:24px;">Continue to Vehicle Info</button>
+                </div>
+
+                <!-- Step 2: Vehicle Info -->
+                <div class="booking-form-step" style="display:none;" id="step-vehicle">
+                    <h3 style="font-size:1.3rem;margin-bottom:20px;"><i class="fa-solid fa-car" style="color:var(--primary);margin-right:8px;"></i> Vehicle Information</h3>
+                    <div class="form-group">
+                        <label>Vehicle Type</label>
+                        <select class="calc-select">
+                            <option>Sedan / Compact</option>
+                            <option>SUV / Crossover</option>
+                            <option>Truck / Van</option>
+                            <option>Luxury / Sports</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Make & Model</label>
+                        <input type="text" class="form-input" placeholder="e.g., Honda Accord 2019">
+                    </div>
+                    <div class="form-group">
+                        <label>Headlight Condition</label>
+                        <select class="calc-select">
+                            <option>Mild — Slight yellowing or haze</option>
+                            <option>Moderate — Noticeable oxidation</option>
+                            <option>Severe — Very yellow/cloudy</option>
+                        </select>
+                    </div>
+                    <div style="display:flex;gap:12px;margin-top:24px;">
+                        <button class="btn btn-secondary btn-prev-step" style="flex:1;">Back</button>
+                        <button class="btn btn-primary btn-next-step" style="flex:2;">Continue to Schedule</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Date & Time -->
+                <div class="booking-form-step" style="display:none;" id="step-schedule">
+                    <h3 style="font-size:1.3rem;margin-bottom:20px;"><i class="fa-solid fa-calendar" style="color:var(--primary);margin-right:8px;"></i> Pick Date & Time</h3>
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time Slot</label>
+                        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="this.classList.toggle('btn-primary');this.classList.toggle('btn-secondary');">8:00 AM</button>
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="this.classList.toggle('btn-primary');this.classList.toggle('btn-secondary');">9:30 AM</button>
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="this.classList.toggle('btn-primary');this.classList.toggle('btn-secondary');">11:00 AM</button>
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="this.classList.toggle('btn-primary');this.classList.toggle('btn-secondary');">12:30 PM</button>
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="this.classList.toggle('btn-primary');this.classList.toggle('btn-secondary');">2:00 PM</button>
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="this.classList.toggle('btn-primary');this.classList.toggle('btn-secondary');">3:30 PM</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Location</label>
+                        <input type="text" class="form-input" placeholder="Enter your address or ZIP code">
+                    </div>
+                    <div style="display:flex;gap:12px;margin-top:24px;">
+                        <button class="btn btn-secondary btn-prev-step" style="flex:1;">Back</button>
+                        <button class="btn btn-primary btn-next-step" style="flex:2;">Continue to Details</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Contact Details -->
+                <div class="booking-form-step" style="display:none;" id="step-details">
+                    <h3 style="font-size:1.3rem;margin-bottom:20px;"><i class="fa-solid fa-user" style="color:var(--primary);margin-right:8px;"></i> Your Contact Details</h3>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-input" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-input" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" class="form-input" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label>Notes (optional)</label>
+                        <textarea class="form-input" rows="3" placeholder="Any special instructions..." style="resize:vertical;"></textarea>
+                    </div>
+                    <div style="display:flex;gap:12px;margin-top:24px;">
+                        <button class="btn btn-secondary btn-prev-step" style="flex:1;">Back</button>
+                        <button class="btn btn-primary btn-next-step" style="flex:2;">Review & Confirm</button>
+                    </div>
+                </div>
+
+                <!-- Step 5: Confirmation -->
+                <div class="booking-form-step" style="display:none;" id="step-confirm">
+                    <div style="text-align:center;padding:24px 0;">
+                        <div style="width:80px;height:80px;border-radius:50%;background:rgba(16,185,129,0.12);color:var(--success);display:flex;align-items:center;justify-content:center;font-size:2.2rem;margin:0 auto 20px;">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3 style="font-size:1.5rem;margin-bottom:8px;">Booking Confirmed!</h3>
+                        <p style="color:var(--text-muted);margin-bottom:24px;max-width:400px;margin-left:auto;margin-right:auto;">Your headlight restoration appointment has been scheduled. We'll send a confirmation email with all the details.</p>
+                        <div style="background:var(--surface-alt);border-radius:var(--radius-md);padding:20px;text-align:left;margin-bottom:24px;">
+                            <h4 style="font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:12px;">Booking Summary</h4>
+                            <div style="display:flex;flex-direction:column;gap:8px;font-size:0.9rem;">
+                                <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Service:</span><strong>Standard + UV Coating</strong></div>
+                                <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Price:</span><strong style="color:var(--primary);">$129</strong></div>
+                                <div style="display:flex;justify-content:space-between;"><span style="color:var(--text-muted);">Warranty:</span><strong>2 Years</strong></div>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                            <a href="services.html" class="btn btn-primary">Browse More Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prep Guidelines & Customer Checklist -->
+    <section class="section" id="prep-guidelines" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Checklist Content -->
+                <div class="lg:col-span-7">
+                    <span class="section-label" style="color:var(--primary);"><i class="fa-solid fa-circle-info" style="margin-right:6px;"></i> Prepare for Results</span>
+                    <h2 style="font-size:2.4rem; font-family:'Outfit',sans-serif; font-weight:800; margin-bottom:12px;">Vehicle Preparation Checklist</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-8 mt-2 leading-relaxed">
+                        To help our mobile technicians achieve factory-new clarity and complete your restoration quickly, please review this simple preparation checklist before your scheduled appointment slot.
+                    </p>
+                    <div style="display:flex; flex-direction:column; gap:16px;">
+                        <!-- Item 1 -->
+                        <div style="display:flex; gap:16px; align-items:start; padding:18px 24px; background:var(--warm-white); border:1px solid var(--border-light); border-left:4px solid var(--success); border-radius:var(--radius-md); box-shadow:0 4px 12px var(--shadow-base); transition:var(--transition);" class="hover:scale-[1.01] hover:shadow-lg">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(16,185,129,0.12); color:var(--success); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-dark); margin-bottom:4px;">1. Driveway Clearance</h4>
+                                <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.5;">Ensure there is at least 3 feet of flat, unobstructed workspace around the front bumper of the vehicle for wet sanding machinery.</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div style="display:flex; gap:16px; align-items:start; padding:18px 24px; background:var(--warm-white); border:1px solid var(--border-light); border-left:4px solid var(--success); border-radius:var(--radius-md); box-shadow:0 4px 12px var(--shadow-base); transition:var(--transition);" class="hover:scale-[1.01] hover:shadow-lg">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(16,185,129,0.12); color:var(--success); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="fa-solid fa-soap"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-dark); margin-bottom:4px;">2. Clean Bumper Surface</h4>
+                                <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.5;">While our technicians clean the lenses, a quick rinse of the front bumper helps prevent windblown dust contaminants during seal curing.</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div style="display:flex; gap:16px; align-items:start; padding:18px 24px; background:var(--warm-white); border:1px solid var(--border-light); border-left:4px solid var(--success); border-radius:var(--radius-md); box-shadow:0 4px 12px var(--shadow-base); transition:var(--transition);" class="hover:scale-[1.01] hover:shadow-lg">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(16,185,129,0.12); color:var(--success); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="fa-solid fa-key"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-dark); margin-bottom:4px;">3. Key Handoff</h4>
+                                <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.5;">We require the vehicle keys on-site only if we are testing internal high/low beam brightness levels or auxiliary fog assemblies.</p>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div style="display:flex; gap:16px; align-items:start; padding:18px 24px; background:var(--warm-white); border:1px solid var(--border-light); border-left:4px solid var(--success); border-radius:var(--radius-md); box-shadow:0 4px 12px var(--shadow-base); transition:var(--transition);" class="hover:scale-[1.01] hover:shadow-lg">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(16,185,129,0.12); color:var(--success); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <i class="fa-solid fa-ban"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-dark); margin-bottom:4px;">4. No Car Wash for 24h</h4>
+                                <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.5;">Do not run the vehicle through an automated high-pressure wash for 24 hours to allow the UV ceramic molecular shield to dry completely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Guarantee Box -->
+                <div class="lg:col-span-5" style="align-self:stretch; display:flex;">
+                    <div style="background:rgba(245,158,11,0.06); border:2.5px dashed rgba(245,158,11,0.3); border-radius:var(--radius-xl); padding:40px 32px; display:flex; flex-direction:column; justify-content:center; box-shadow:0 12px 36px rgba(245,158,11,0.05); width:100%;">
+                        <div style="width:56px;height:56px;border-radius:16px;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3 style="font-size:1.3rem; font-family:'Outfit',sans-serif; font-weight:800; color:var(--text-dark); margin-bottom:12px;">Important Curing Notice</h3>
+                        <p style="font-size:0.85rem; color:var(--text-muted); leading-relaxed; line-height:1.65; margin-bottom:24px;">
+                            Our UV ceramic coating uses solar-activated polymers. While our technicians fully cure the coating with high-intensity ultraviolet lamps on-site, the molecular shield continues to harden over the first <strong>24 hours</strong>. Please avoid touching or scratching the lenses during this initial curing window.
+                        </p>
+                        <div style="display:flex; align-items:center; gap:8px; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.2); padding:10px 18px; border-radius:30px; align-self:flex-start;">
+                            <span class="inline-block text-[10px] font-bold text-amber-600 dark:text-amber-500 uppercase tracking-widest">Molecular Cure: 24 Hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rescheduling & Weather Policies -->
+    <section class="section" id="booking-policies" style="background:var(--warm-white);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label" style="color:var(--primary);"><i class="fa-solid fa-shield" style="margin-right:6px;"></i> Peace of Mind</span>
+                <h2 style="font-size:2.2rem; font-family:'Outfit',sans-serif; font-weight:800; margin-bottom:12px;">Cancellation, Rescheduling & Rain Policies</h2>
+                <p style="font-size:0.95rem; color:var(--text-muted); max-width:580px; margin:0 auto;">We make mobile headlight restoration stress-free. Here are our transparent, friendly appointment guidelines.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Policy 1 -->
+                <div style="background:var(--surface); border:1px solid var(--border-light); border-top:4px solid var(--primary); border-radius:var(--radius-lg); padding:32px 28px; box-shadow:0 6px 20px var(--shadow-base); transition:var(--transition); display:flex; flex-direction:column; height:100%;" class="hover:-translate-y-2 hover:shadow-xl group">
+                    <div style="width:48px; height:48px; border-radius:12px; background:rgba(14,165,233,0.12); color:var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.25rem; margin-bottom:20px; transition:var(--transition);" class="group-hover:scale-110">
+                        <i class="fa-solid fa-calendar-day"></i>
+                    </div>
+                    <h3 style="font-size:1.15rem; font-family:'Outfit',sans-serif; font-weight:700; color:var(--text-dark); margin-bottom:10px;">Flexible Rescheduling</h3>
+                    <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.6;">
+                        Need to shift your slot? You can reschedule or cancel your booking for free with at least **4 hours' notice**. Simply click the link in your confirmation email or contact our support dispatch.
+                    </p>
+                </div>
+                <!-- Policy 2 -->
+                <div style="background:var(--surface); border:1px solid var(--border-light); border-top:4px solid var(--warning); border-radius:var(--radius-lg); padding:32px 28px; box-shadow:0 6px 20px var(--shadow-base); transition:var(--transition); display:flex; flex-direction:column; height:100%;" class="hover:-translate-y-2 hover:shadow-xl group">
+                    <div style="width:48px; height:48px; border-radius:12px; background:rgba(245,158,11,0.12); color:var(--warning); display:flex; align-items:center; justify-content:center; font-size:1.25rem; margin-bottom:20px; transition:var(--transition);" class="group-hover:scale-110">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    </div>
+                    <h3 style="font-size:1.15rem; font-family:'Outfit',sans-serif; font-weight:700; color:var(--text-dark); margin-bottom:10px;">Weather Guarantee</h3>
+                    <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.6;">
+                        If rain, heavy storms, or high winds prevent our mobile units from sealing your coating outdoors, we'll reschedule you in our very next premium priority slot at zero cost, or work in a home garage.
+                    </p>
+                </div>
+                <!-- Policy 3 -->
+                <div style="background:var(--surface); border:1px solid var(--border-light); border-top:4px solid var(--success); border-radius:var(--radius-lg); padding:32px 28px; box-shadow:0 6px 20px var(--shadow-base); transition:var(--transition); display:flex; flex-direction:column; height:100%;" class="hover:-translate-y-2 hover:shadow-xl group">
+                    <div style="width:48px; height:48px; border-radius:12px; background:rgba(16,185,129,0.12); color:var(--success); display:flex; align-items:center; justify-content:center; font-size:1.25rem; margin-bottom:20px; transition:var(--transition);" class="group-hover:scale-110">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 style="font-size:1.15rem; font-family:'Outfit',sans-serif; font-weight:700; color:var(--text-dark); margin-bottom:10px;">No Cash Upfront</h3>
+                    <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.6;">
+                        We never ask for credit cards or cash upfront. We only collect payment **after the service is fully completed** and you are 100% satisfied with the optical clarity of your restored headlights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

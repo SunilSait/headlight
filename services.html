@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensGlow professional headlight restoration services — headlight, tail light, fog light restoration, UV ceramic coating, lens polishing, and fleet services.">
+    <title>Our Services | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="navbar-container"></div>
+
+    <!-- Page Hero -->
+    <section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container">
+            <nav style="font-size:0.85rem;margin-bottom:16px;color:rgba(255,255,255,0.6);">
+                <a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <span style="color:var(--primary-light);">Services</span>
+            </nav>
+            <h1 style="font-size:2.6rem;color:#fff;margin-bottom:12px;">Our Professional Services</h1>
+            <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;">Complete headlight and lens restoration solutions — from basic polishing to premium UV ceramic protection.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section" id="services-grid">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Headlight Restoration -->
+                <div class="card animate-on-scroll slide-left" id="svc-headlight">
+                    <img src="assets/images/headlight-restore.png" alt="Headlight restoration service" class="card-img">
+                    <span class="badge badge-primary">Most Popular</span>
+                    <h3 style="margin-top:12px;">Headlight Restoration</h3>
+                    <p>Multi-stage wet sanding and compound polishing to remove oxidation, yellowing, and haziness from plastic headlight lenses.</p>
+                    <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+                        <strong style="color:var(--primary);">From $79</strong> • Both headlights • 45 min
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-sm" style="margin-top:auto;align-self:flex-start;">Book This Service</a>
+                </div>
+                <!-- Tail Light Restoration -->
+                <div class="card animate-on-scroll zoom-in delay-100" id="svc-taillight">
+                    <img src="assets/images/tail-light.png" alt="Tail light restoration" class="card-img">
+                    <span class="badge badge-error">Safety Critical</span>
+                    <h3 style="margin-top:12px;">Tail Light Restoration</h3>
+                    <p>Restore faded, scratched, or hazy tail light lenses to like-new clarity. Essential for rear visibility and vehicle safety compliance.</p>
+                    <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+                        <strong style="color:var(--primary);">From $89</strong> • Both tail lights • 40 min
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-sm" style="margin-top:auto;align-self:flex-start;">Book This Service</a>
+                </div>
+                <!-- Fog Light Restoration -->
+                <div class="card animate-on-scroll slide-right delay-200" id="svc-foglight">
+                    <img src="assets/images/fog-light.png" alt="Fog light restoration" class="card-img">
+                    <span class="badge badge-success">Add-On</span>
+                    <h3 style="margin-top:12px;">Fog Light Restoration</h3>
+                    <p>Clear and polish fog light lenses for improved low-visibility driving. Often combined with headlight restoration for a complete refresh.</p>
+                    <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+                        <strong style="color:var(--primary);">From $69</strong> • Both fog lights • 30 min
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-sm" style="margin-top:auto;align-self:flex-start;">Book This Service</a>
+                </div>
+                <!-- UV Ceramic Coating -->
+                <div class="card animate-on-scroll slide-left delay-100" id="svc-uv-coating">
+                    <img src="assets/images/uv-coating.png" alt="UV ceramic coating" class="card-img">
+                    <span class="badge badge-warning">2-Year Warranty</span>
+                    <h3 style="margin-top:12px;">UV Ceramic Coating</h3>
+                    <p>Professional-grade UV-blocking ceramic sealant applied after restoration. Prevents re-oxidation and yellowing for years with our warranty.</p>
+                    <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+                        <strong style="color:var(--primary);">From $49</strong> • Add-on to any service
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-sm" style="margin-top:auto;align-self:flex-start;">Add UV Coating</a>
+                </div>
+                <!-- Lens Polishing -->
+                <div class="card animate-on-scroll zoom-in delay-200" id="svc-lens-polish">
+                    <img src="assets/images/lens-polish.png" alt="Lens polishing" class="card-img">
+                    <span class="badge badge-primary">Premium</span>
+                    <h3 style="margin-top:12px;">Lens Polishing & Buffing</h3>
+                    <p>Precision polishing using automotive-grade micro-abrasive compounds to eliminate surface scratches and restore optical clarity.</p>
+                    <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+                        <strong style="color:var(--primary);">From $99</strong> • Both headlights • 50 min
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-sm" style="margin-top:auto;align-self:flex-start;">Book This Service</a>
+                </div>
+                <!-- Fleet Services -->
+                <div class="card animate-on-scroll slide-right delay-300" id="svc-fleet">
+                    <img src="assets/images/fleet-service.png" alt="Fleet services" class="card-img">
+                    <span class="badge badge-success">15% Off</span>
+                    <h3 style="margin-top:12px;">Fleet & Dealership Services</h3>
+                    <p>Volume pricing for 5+ vehicles. On-site mobile service at your depot, dealership lot, or parking facility with minimal vehicle downtime.</p>
+                    <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+                        <strong style="color:var(--primary);">Custom Quote</strong> • On-site service
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary btn-sm" style="margin-top:auto;align-self:flex-start;">Get Fleet Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Breakdown -->
+    <section class="section" id="process" style="background:var(--warm-white);border-top:1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Our Process</span>
+                <h2>The LensGlow Restoration Process</h2>
+                <p>A systematic, multi-stage approach that delivers consistent, professional-grade results every time.</p>
+            </div>
+            <div class="grid-4">
+                <div class="animate-on-scroll zoom-in" style="text-align:center;">
+                    <div style="width:64px;height:64px;border-radius:50%;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 style="font-size:1rem;margin-bottom:6px;">1. Inspection</h3>
+                    <p style="font-size:0.85rem;color:var(--text-muted);">Assess damage level, check for internal condensation, and determine the optimal restoration approach.</p>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-100" style="text-align:center;">
+                    <div style="width:64px;height:64px;border-radius:50%;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px;">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 style="font-size:1rem;margin-bottom:6px;">2. Wet Sanding</h3>
+                    <p style="font-size:0.85rem;color:var(--text-muted);">Progressive wet sanding from 800 to 3000 grit to remove the oxidized surface layer safely.</p>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-200" style="text-align:center;">
+                    <div style="width:64px;height:64px;border-radius:50%;background:rgba(16,185,129,0.12);color:var(--success);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px;">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 style="font-size:1rem;margin-bottom:6px;">3. Compound Polish</h3>
+                    <p style="font-size:0.85rem;color:var(--text-muted);">Machine polishing with cutting compound followed by finishing polish for mirror-like optical clarity.</p>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-300" style="text-align:center;">
+                    <div style="width:64px;height:64px;border-radius:50%;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px;">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 style="font-size:1rem;margin-bottom:6px;">4. UV Seal</h3>
+                    <p style="font-size:0.85rem;color:var(--text-muted);">Apply UV ceramic coating to seal and protect the restored surface for years of crystal-clear performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Add-Ons & Maintenance Plans -->
+    <section class="section" id="addons-maintenance" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">Extra Protection</span>
+                <h2>Specialized Add-Ons & Annual Maintenance Plans</h2>
+                <p>Enhance your restoration with advanced protective services or lock in lifetime clarity with our yearly touch-up programs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Add-on 1 -->
+                <div class="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div style="width:48px;height:48px;border-radius:12px;background:rgba(14,165,233,0.1);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:16px;">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-md font-bold mb-2" style="font-family:'Outfit',sans-serif;">PPF Protective Vinyl Film Wrap</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Apply a heavy-duty, computer-cut Paint Protection Film (PPF) layer on top of your restored lens. Offers physical protection against road gravel, rock chips, and severe sandblasting.
+                    </p>
+                    <div class="text-xs font-bold text-slate-700 dark:text-slate-300">+ $59 Per Pair</div>
+                </div>
+                <!-- Add-on 2 -->
+                <div class="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div style="width:48px;height:48px;border-radius:12px;background:rgba(16,185,129,0.1);color:#10B981;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:16px;">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="text-md font-bold mb-2" style="font-family:'Outfit',sans-serif;">Super Hydrophobic Coating</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        An advanced top-coat that increases surface tension, forcing rainwater, dirt, mud, and road salt to immediately slide off. Keeps your headlights crystal clear even in severe storms.
+                    </p>
+                    <div class="text-xs font-bold text-slate-700 dark:text-slate-300">+ $29 Per Pair</div>
+                </div>
+                <!-- Add-on 3 -->
+                <div class="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div style="width:48px;height:48px;border-radius:12px;background:rgba(245,158,11,0.1);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:16px;">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                    </div>
+                    <h3 class="text-md font-bold mb-2" style="font-family:'Outfit',sans-serif;">Annual Clarity Maintenance Plan</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                        Enroll in our automated system. Every 12 months, we dispatch a technician to your driveway to wash, clay bar, and apply a fresh UV-blocking ceramic layer, guaranteeing clarity for a lifetime.
+                    </p>
+                    <div class="text-xs font-bold text-slate-700 dark:text-slate-300">$39 / Year (recurring)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clarity Shield Advanced Technology Showcase -->
+    <section class="section" id="clarity-shield-showcase" style="background:var(--warm-white);">
+        <div class="container animate-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Visual representation -->
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-sky-500/10 to-emerald-500/10 rounded-3xl blur-2xl group-hover:scale-105 transition-transform duration-700"></div>
+                    <img src="assets/images/uv-coating.png" alt="Applying UV ceramic coating" class="relative rounded-2xl border border-slate-100 dark:border-slate-800 shadow-2xl hover:scale-[1.02] transition-transform duration-500 max-h-[400px] w-full object-cover">
+                </div>
+                <!-- Content -->
+                <div class="space-y-6">
+                    <span class="section-label">Restoration Chemistry</span>
+                    <h2 class="text-3xl font-bold" style="font-family:'Outfit',sans-serif;">Professional Molecular Seal vs. Cheap DIY Sprays</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Many cheap DIY kits use basic aerosol sprays that act as temporary lacquer coats. When subjected to severe heat and engine vibrations, these thin clear sprays fail, cracking and peeling away under severe solar heat.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start space-x-2 text-sm text-slate-700 dark:text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 flex-shrink-0"></i>
+                            <span><strong>9H Hardness:</strong> Heavy duty ceramic molecular mesh preventing physical micro-abrasions.</span>
+                        </div>
+                        <div class="flex items-start space-x-2 text-sm text-slate-700 dark:text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 flex-shrink-0"></i>
+                            <span><strong>High Heat Tolerance:</strong> Formulated to resist headlight bulb heat up to 250°F without peeling.</span>
+                        </div>
+                        <div class="flex items-start space-x-2 text-sm text-slate-700 dark:text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 flex-shrink-0"></i>
+                            <span><strong>Non-Yellowing:</strong> Cross-linked polymers filter out harmful solar radiation wavelengths.</span>
+                        </div>
+                        <div class="flex items-start space-x-2 text-sm text-slate-700 dark:text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 flex-shrink-0"></i>
+                            <span><strong>2-Year Warranty:</strong> Fully backed by our zero-cost re-restoration agreement.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty Section -->
+    <section class="section" id="warranty" style="text-align:center;">
+        <div class="container animate-on-scroll">
+            <div style="display:inline-flex;align-items:center;gap:16px;background:var(--warm-white);border:1px solid var(--border-light);border-radius:var(--radius-xl);padding:28px 40px;box-shadow:0 4px 20px var(--shadow-base);flex-wrap:wrap;justify-content:center;">
+                <div style="width:56px;height:56px;border-radius:50%;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div style="text-align:left;">
+                    <h3 style="font-size:1.15rem;margin-bottom:4px;font-family:'Outfit',sans-serif;">2-Year UV Protection Warranty</h3>
+                    <p style="font-size:0.9rem;color:var(--text-muted);">Every UV ceramic coating comes with our comprehensive 2-year clarity warranty. If your headlights deteriorate, we re-restore them free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="services-cta" style="background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container animate-on-scroll">
+            <h2 style="color:#fff;font-size:2.2rem;margin-bottom:12px;">Ready to Restore Your Headlights?</h2>
+            <p style="color:rgba(255,255,255,0.85);max-width:480px;margin:0 auto 28px;">Book your service today and experience the LensGlow difference. Same-day appointments available.</p>
+            <a href="booking.html" class="btn btn-lg" style="background:#fff;color:var(--primary);border-color:#fff;font-weight:700;">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LensGlow for headlight restoration questions, fleet quotes, or service inquiries. Reach us by phone, email, or our contact form.">
+    <title>Contact Us | LensGlow Headlight Restoration</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#0EA5E9',secondary:'#0F172A'}}}}</script>
+    <script src="components.js" defer></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="navbar-container"></div>
+
+    <!-- Page Hero -->
+    <section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container">
+            <nav style="font-size:0.85rem;margin-bottom:16px;color:rgba(255,255,255,0.6);">
+                <a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <span style="color:var(--primary-light);">Contact</span>
+            </nav>
+            <h1 style="font-size:2.6rem;color:#fff;margin-bottom:12px;">Get In Touch</h1>
+            <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;">Have questions about our services? Need a fleet quote? We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section" id="contact-section">
+        <div class="container">
+            <div class="grid-2" style="gap:48px;">
+                <!-- Contact Form -->
+                <div class="animate-on-scroll slide-left">
+                    <h2 style="margin-bottom:24px;">Send Us a Message</h2>
+                    <form id="contact-form" onsubmit="event.preventDefault();this.innerHTML='<div style=\'text-align:center;padding:40px 0;\'><i class=\'fa-solid fa-circle-check\' style=\'font-size:3rem;color:var(--success);margin-bottom:16px;display:block;\'></i><h3>Message Sent!</h3><p style=\'color:var(--text-muted);margin-top:8px;\'>We\'ll get back to you within 24 hours.</p></div>';">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" class="calc-select">
+                                <option>General Inquiry</option>
+                                <option>Service Question</option>
+                                <option>Fleet / Bulk Quote</option>
+                                <option>Warranty Claim</option>
+                                <option>Partnership Opportunity</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-input" rows="5" placeholder="Tell us how we can help..." required style="resize:vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="animate-on-scroll slide-right">
+                    <h2 style="margin-bottom:24px;">Contact Information</h2>
+                    <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:32px;">
+                        <div style="display:flex;gap:16px;align-items:start;">
+                            <div style="width:48px;height:48px;border-radius:12px;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem;font-weight:700;margin-bottom:2px;">Phone</h4>
+                                <p style="font-size:0.9rem;color:var(--text-muted);">+1 (555) 892-4710</p>
+                                <p style="font-size:0.8rem;color:var(--text-muted);">Mon-Sat: 7:00 AM – 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:16px;align-items:start;">
+                            <div style="width:48px;height:48px;border-radius:12px;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem;font-weight:700;margin-bottom:2px;">Email</h4>
+                                <p style="font-size:0.9rem;color:var(--text-muted);">hello@lensglow.co</p>
+                                <p style="font-size:0.8rem;color:var(--text-muted);">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:16px;align-items:start;">
+                            <div style="width:48px;height:48px;border-radius:12px;background:rgba(16,185,129,0.12);color:var(--success);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem;font-weight:700;margin-bottom:2px;">Office</h4>
+                                <p style="font-size:0.9rem;color:var(--text-muted);">127 Clearview Drive, Metro City</p>
+                                <p style="font-size:0.8rem;color:var(--text-muted);">Mobile service — we come to you!</p>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:16px;align-items:start;">
+                            <div style="width:48px;height:48px;border-radius:12px;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size:0.95rem;font-weight:700;margin-bottom:2px;">Business Hours</h4>
+                                <p style="font-size:0.9rem;color:var(--text-muted);">Monday – Saturday: 7:00 AM – 7:00 PM</p>
+                                <p style="font-size:0.8rem;color:var(--text-muted);">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Info Panel to Equal Heights -->
+                    <div style="background:rgba(14,165,233,0.06); border:1px solid rgba(14,165,233,0.15); border-radius:var(--radius-lg); padding:24px; margin-top:24px;">
+                        <h4 style="font-size:1rem; font-weight:700; margin-bottom:14px; font-family:'Outfit',sans-serif; color:var(--text-dark); display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-wand-magic-sparkles text-sky-500"></i> Our Mobile Guarantees
+                        </h4>
+                        <ul style="display:flex; flex-direction:column; gap:12px; font-size:0.85rem; color:var(--text-muted); line-height:1.5;">
+                            <li style="display:flex; gap:10px; align-items:start;">
+                                <i class="fa-solid fa-circle-check text-emerald-500" style="margin-top:2px; flex-shrink:0;"></i>
+                                <span><strong>Self-Powered Units:</strong> Our custom service vans carry onboard generators and purified water. We require zero plug-ins from your property.</span>
+                            </li>
+                            <li style="display:flex; gap:10px; align-items:start;">
+                                <i class="fa-solid fa-circle-check text-emerald-500" style="margin-top:2px; flex-shrink:0;"></i>
+                                <span><strong>Flexible Weather Policy:</strong> If heavy rain or bad weather prevents outdoor work, we can operate inside your garage or reschedule at zero cost.</span>
+                            </li>
+                            <li style="display:flex; gap:10px; align-items:start;">
+                                <i class="fa-solid fa-circle-check text-emerald-500" style="margin-top:2px; flex-shrink:0;"></i>
+                                <span><strong>2-Year Clarity Guarantee:</strong> Every mobile restoration is sealed with professional UV coating and backed by our comprehensive warranty.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Map -->
+            <div class="animate-on-scroll zoom-in" style="margin-top:56px; display:flex; justify-content:center; width:100%;">
+                <div style="max-width:1200px; width:100%;">
+                    <h3 style="text-align:center;font-size:1.1rem;font-weight:700;margin-bottom:20px;font-family:'Outfit',sans-serif;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dark);">
+                        Our Service Coverage Area
+                    </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280821213!2d-74.11976375740337!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1717000000000!5m2!1sen!2sus" width="100%" height="380" style="border:0; border-radius:var(--radius-xl); box-shadow:0 8px 32px var(--shadow-base); display:block;" allowfullscreen="" loading="lazy" title="Interactive LensGlow Service Coverage Map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="contact-faq" style="background:var(--warm-white);border-top:1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Quick Answers</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion animate-on-scroll zoom-in" style="max-width:720px;margin:0 auto;">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question" style="color:var(--primary);margin-right:10px;"></i> Do I need to bring my car to you?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">No! LensGlow is a <strong>fully mobile service</strong>. We come to your home, office, or any location with our self-powered mobile unit. No drop-off needed.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question" style="color:var(--primary);margin-right:10px;"></i> How do I pay?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">We accept all major credit cards, debit cards, Apple Pay, Google Pay, and cash. Payment is collected <strong>after the service is complete</strong> and you're satisfied with the results.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question" style="color:var(--primary);margin-right:10px;"></i> Can I reschedule my appointment?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">Yes, you can reschedule with <strong>at least 4 hours notice</strong> at no charge. Simply call or email us with your new preferred time.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

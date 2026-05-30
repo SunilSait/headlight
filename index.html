@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LensGlow — Professional mobile headlight restoration & lens polishing. We come to you. Crystal clear headlights, UV protection warranty, same-day service.">
+    <title>LensGlow | Mobile Headlight Restoration & Lens Polishing</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#0EA5E9', secondary: '#0F172A' } } }
+        }
+    </script>
+    <script src="components.js" defer></script>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Shared Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero-section">
+        <div class="hero-bg">
+            <img src="assets/images/hero-headlight.png" alt="Before and after headlight restoration">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="section-label" style="color:#38BDF8;">Mobile Headlight Restoration</span>
+            <h1>Crystal Clear Headlights, Guaranteed</h1>
+            <p>Professional headlight restoration & lens polishing at your doorstep. We restore clarity, improve safety,
+                and protect with UV ceramic coating — backed by a 2-year warranty.</p>
+            <div class="hero-btns">
+                <a href="booking.html" class="btn btn-primary btn-lg" id="hero-cta-primary">Book Free Estimate</a>
+                <a href="gallery.html" class="btn btn-secondary btn-lg" id="hero-cta-secondary">See Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features-section" style="background:var(--warm-white);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">What We Offer</span>
+                <h2>Professional Headlight Services</h2>
+                <p>From oxidized lenses to crystal-clear perfection — our certified technicians bring the workshop to
+                    your driveway.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll slide-left" id="feature-restore">
+                    <img src="assets/images/headlight-restore.png" alt="Headlight restoration service"
+                        class="card-img shake-hover">
+                    <span class="badge badge-primary">Most Popular</span>
+                    <h3 style="margin-top:12px;">Headlight Restoration</h3>
+                    <p>Multi-stage wet sanding, compound polishing, and clarity restoration for yellowed, oxidized, or
+                        hazy headlight lenses.</p>
+                    <a href="services.html" class="btn btn-secondary btn-sm"
+                        style="margin-top:auto; align-self:flex-start;">Learn More</a>
+                </div>
+                <div class="card animate-on-scroll zoom-in delay-100" id="feature-polish">
+                    <img src="assets/images/lens-polish.png" alt="Lens polishing service" class="card-img shake-hover">
+                    <span class="badge badge-success">Premium</span>
+                    <h3 style="margin-top:12px;">Lens Polishing</h3>
+                    <p>Precision polishing using automotive-grade compounds to eliminate micro-scratches and restore
+                        factory-new clarity.</p>
+                    <a href="services.html" class="btn btn-secondary btn-sm"
+                        style="margin-top:auto; align-self:flex-start;">Learn More</a>
+                </div>
+                <div class="card animate-on-scroll slide-right delay-200" id="feature-uv">
+                    <img src="assets/images/uv-coating.png" alt="UV ceramic coating application"
+                        class="card-img shake-hover">
+                    <span class="badge badge-warning">2-Year Warranty</span>
+                    <h3 style="margin-top:12px;">UV Ceramic Coating</h3>
+                    <p>Industry-leading UV protective ceramic sealant that prevents future oxidation and yellowing.
+                        Backed by warranty.</p>
+                    <a href="services.html" class="btn btn-secondary btn-sm"
+                        style="margin-top:auto; align-self:flex-start;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section" id="why-section"
+        style="background:var(--surface-alt);overflow:hidden;border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container">
+            <div class="grid-2" style="align-items:center;gap:48px;">
+                <div class="animate-on-scroll slide-left">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2>We Come to You — Anywhere, Anytime</h2>
+                    <p style="margin-bottom:20px;">Unlike shop-based services that waste your time, LensGlow's mobile
+                        unit arrives fully equipped at your home, office, or dealership. Our certified technicians use
+                        professional-grade equipment and compounds for results that rival brand-new headlights.</p>
+                    <p style="margin-bottom:24px;">Every restoration is sealed with our proprietary UV ceramic coating
+                        — the same technology used by luxury dealerships — and backed by a comprehensive 2-year
+                        clarity warranty.</p>
+                    <div style="display:flex;gap:16px;align-items:center;margin-bottom:16px;">
+                        <div
+                            style="width:48px;height:48px;border-radius:50%;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size:0.95rem;font-weight:700;">Mobile Service</h4>
+                            <p style="font-size:0.85rem;color:var(--text-muted);">We bring the entire workshop to your
+                                location.</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:16px;align-items:center;">
+                        <div
+                            style="width:48px;height:48px;border-radius:50%;background:rgba(245,158,11,0.12);color:var(--warning);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size:0.95rem;font-weight:700;">2-Year UV Warranty</h4>
+                            <p style="font-size:0.85rem;color:var(--text-muted);">Our ceramic coating protects against
+                                re-oxidation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll slide-right"
+                    style="position:relative;display:flex;justify-content:center;">
+                    <img src="assets/images/service-van.png" alt="LensGlow mobile service van"
+                        style="border-radius:var(--radius-xl);box-shadow:0 12px 30px var(--shadow-cool);border:4px solid var(--warm-white);max-height:420px;object-fit:cover;"
+                        class="float-rotate-element">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">How It Works</span>
+                <h2>Your Restoration in 4 Simple Steps</h2>
+                <p>From booking to a crystal-clear finish — we make headlight restoration effortless.</p>
+            </div>
+            <div class="timeline animate-on-scroll zoom-in">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-on-scroll slide-left">
+                        <h3>1. Book Online</h3>
+                        <p>Choose your service, pick a date and time slot that works for you, and we'll confirm your
+                            appointment instantly.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-on-scroll slide-right">
+                        <h3>2. We Come to You</h3>
+                        <p>Our fully-equipped mobile unit arrives at your location — home, office, or dealership. No
+                            need to drop off your car.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-on-scroll slide-left">
+                        <h3>3. Restore & Protect</h3>
+                        <p>Our certified technicians perform multi-stage restoration, compound polishing, and seal with
+                            UV ceramic coating in 45–60 minutes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content animate-on-scroll slide-right">
+                        <h3>4. Drive with Confidence</h3>
+                        <p>Enjoy crystal-clear headlights with improved night visibility, a sleek appearance, and our
+                            2-year warranty for peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Mini Gallery -->
+    <section class="section" id="gallery-preview"
+        style="background:var(--warm-white);border-top:1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">See the Difference</span>
+                <h2>Before & After Transformations</h2>
+                <p>Real results from real customers. Drag the slider to reveal the transformation.</p>
+            </div>
+            <div class="grid-3">
+                <div class="animate-on-scroll slide-left" id="ba-preview-1">
+                    <div class="ba-slider">
+                        <img src="assets/images/before-after-1.png" alt="Before restoration" class="ba-before">
+                        <img src="assets/images/before-after-1.png" alt="After restoration" class="ba-after"
+                            style="filter:brightness(1.2) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-100" id="ba-preview-2">
+                    <div class="ba-slider">
+                        <img src="assets/images/before-after-2.png" alt="Before restoration" class="ba-before">
+                        <img src="assets/images/before-after-2.png" alt="After restoration" class="ba-after"
+                            style="filter:brightness(1.2) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                </div>
+                <div class="animate-on-scroll slide-right delay-200" id="ba-preview-3">
+                    <div class="ba-slider">
+                        <img src="assets/images/before-after-3.png" alt="Before restoration" class="ba-before">
+                        <img src="assets/images/before-after-3.png" alt="After restoration" class="ba-after"
+                            style="filter:brightness(1.2) contrast(1.1);">
+                        <div class="ba-handle"></div>
+                        <span class="ba-label before">Before</span>
+                        <span class="ba-label after">After</span>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:32px;" class="animate-on-scroll">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Showcase -->
+    <section class="section" id="stats-section"
+        style="background:linear-gradient(rgba(15,23,42,0.92), rgba(15,23,42,0.92)), url('assets/images/hero-premium.png') center/cover fixed;color:#fff;padding:80px 0;">
+        <div class="container">
+            <div class="grid-4" style="text-align:center;">
+                <div class="animate-on-scroll zoom-in">
+                    <div style="font-size:2.8rem;font-family:'Outfit',sans-serif;font-weight:800;color:var(--primary-light);"
+                        data-count="5000" data-suffix="+">0</div>
+                    <h3
+                        style="color:#fff;font-size:1rem;margin-top:8px;font-family:'Inter',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:1px;">
+                        Headlights Restored</h3>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-100">
+                    <div style="font-size:2.8rem;font-family:'Outfit',sans-serif;font-weight:800;color:var(--primary-light);"
+                        data-count="99" data-suffix="%">0</div>
+                    <h3
+                        style="color:#fff;font-size:1rem;margin-top:8px;font-family:'Inter',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:1px;">
+                        Customer Satisfaction</h3>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-200">
+                    <div style="font-size:2.8rem;font-family:'Outfit',sans-serif;font-weight:800;color:var(--primary-light);"
+                        data-count="2" data-suffix=" Year">0</div>
+                    <h3
+                        style="color:#fff;font-size:1rem;margin-top:8px;font-family:'Inter',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:1px;">
+                        UV Protection Warranty</h3>
+                </div>
+                <div class="animate-on-scroll zoom-in delay-300">
+                    <div style="font-size:2.8rem;font-family:'Outfit',sans-serif;font-weight:800;color:var(--primary-light);"
+                        data-count="45" data-suffix=" Min">0</div>
+                    <h3
+                        style="color:#fff;font-size:1rem;margin-top:8px;font-family:'Inter',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:1px;">
+                        Average Service Time</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials-section" style="background:var(--warm-white);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">What Customers Say</span>
+                <h2>Trusted by 5,000+ Vehicle Owners</h2>
+                <p>See why drivers, dealerships, and fleet managers choose LensGlow for headlight restoration.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll slide-left" id="testimonial-1"
+                    style="text-align:center; display:flex; flex-direction:column; height:100%;">
+                    <div
+                        style="width:56px;height:56px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.3rem;font-weight:700;flex-shrink:0;">
+                        JM</div>
+                    <p style="font-style:italic;margin-bottom:14px;">"My headlights were so yellow I failed
+                        inspection. LensGlow came to my office parking lot and they look brand new. The UV coating is
+                        holding up perfectly after 8 months!"</p>
+                    <h3 style="font-size:1rem; margin-top:auto;">James Mitchell</h3>
+                    <span style="font-size:0.8rem;color:var(--text-muted);">2019 Honda Accord Owner</span>
+                    <div style="margin-top:10px;color:var(--warning); flex-shrink:0;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll zoom-in delay-100" id="testimonial-2"
+                    style="text-align:center; display:flex; flex-direction:column; height:100%;">
+                    <div
+                        style="width:56px;height:56px;border-radius:50%;background:#1E3A5F;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.3rem;font-weight:700;flex-shrink:0;">
+                        AK</div>
+                    <p style="font-style:italic;margin-bottom:14px;">"We use LensGlow for our entire delivery fleet —
+                        42 vans. The bulk pricing is unbeatable and the mobile service means zero downtime. Highly
+                        recommended!"</p>
+                    <h3 style="font-size:1rem; margin-top:auto;">Andrea Kim</h3>
+                    <span style="font-size:0.8rem;color:var(--text-muted);">Fleet Manager, Swift Logistics</span>
+                    <div style="margin-top:10px;color:var(--warning); flex-shrink:0;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll slide-right delay-200" id="testimonial-3"
+                    style="text-align:center; display:flex; flex-direction:column; height:100%;">
+                    <div
+                        style="width:56px;height:56px;border-radius:50%;background:var(--success);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.3rem;font-weight:700;flex-shrink:0;">
+                        RP</div>
+                    <p style="font-style:italic;margin-bottom:14px;">"I was about to spend $400 on new headlight
+                        assemblies. LensGlow restored them for $129 with UV coating. Incredible value and the result is
+                        indistinguishable from new."</p>
+                    <h3 style="font-size:1rem; margin-top:auto;">Robert Patel</h3>
+                    <span style="font-size:0.8rem;color:var(--text-muted);">2017 Toyota Camry Owner</span>
+                    <div style="margin-top:10px;color:var(--warning); flex-shrink:0;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section animate-on-scroll zoom-in" id="partners-section"
+        style="background:var(--surface);padding:48px 0;border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container">
+            <h4
+                style="text-align:center;font-size:0.8rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);margin-bottom:24px;">
+                Trusted by Leading Automotive Brands & Dealerships
+            </h4>
+            <div
+                style="display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:32px;opacity:0.9;">
+                <span class="text-slate-800 dark:text-sky-100/90"
+                    style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1.15rem;"><i
+                        class="fa-solid fa-car text-sky-500 dark:text-sky-400"
+                        style="margin-right:6px;margin-left:6px;"></i> AutoCare Pro</span>
+                <span class="text-slate-800 dark:text-sky-100/90"
+                    style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1.15rem;"><i
+                        class="fa-solid fa-shield-halved text-amber-500 dark:text-amber-400"
+                        style="margin-right:6px;margin-left:6px;"></i> ClearVision Labs</span>
+                <span class="text-slate-800 dark:text-sky-100/90"
+                    style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1.15rem;"><i
+                        class="fa-solid fa-gem text-emerald-500 dark:text-emerald-400"
+                        style="margin-right:6px;margin-left:6px;"></i> Elite Detailing</span>
+                <span class="text-slate-800 dark:text-sky-100/90"
+                    style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1.15rem;"><i
+                        class="fa-solid fa-bolt text-violet-500 dark:text-violet-400"
+                        style="margin-right:6px;margin-left:6px;"></i> DriveShield</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section" id="faq-section" style="background:var(--warm-white);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">FAQ</span>
+                <h2>Common Questions About Headlight Restoration</h2>
+                <p>Everything you need to know before booking your service.</p>
+            </div>
+            <div class="accordion animate-on-scroll zoom-in" style="max-width:720px;margin:0 auto;">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question"
+                                style="color:var(--primary);margin-right:10px;"></i> How long does the restoration
+                            take?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            A standard headlight restoration takes approximately <strong>45–60 minutes</strong> for both
+                            headlights. Premium services with UV ceramic coating may take up to 90 minutes. You can
+                            continue your day while we work.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question"
+                                style="color:var(--primary);margin-right:10px;"></i> What does the UV warranty
+                            cover?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            Our <strong>2-year UV Protection Warranty</strong> covers re-oxidation, yellowing, and hazing
+                            of the treated headlight lenses. If your headlights deteriorate within the warranty period,
+                            we'll re-restore them at no charge. The warranty is transferable with vehicle ownership.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question"
+                                style="color:var(--primary);margin-right:10px;"></i> Is headlight restoration worth it
+                            vs. replacement?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            Absolutely. New headlight assemblies cost <strong>$200–$800 per side</strong> plus
+                            installation. Our restoration service starts at just <strong>$79 for both headlights</strong>
+                            and achieves 95%+ clarity restoration. With UV ceramic coating, the results last years.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-circle-question"
+                                style="color:var(--primary);margin-right:10px;"></i> Do you service commercial fleets?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            Yes! We offer <strong>fleet pricing at 15% off</strong> for 5+ vehicles. Our mobile unit can
+                            service your entire fleet at your depot or parking lot with minimal downtime. Contact us for
+                            a custom fleet quote.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section" id="cta-section"
+        style="background:linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);color:#fff;text-align:center;">
+        <div class="container animate-on-scroll">
+            <span class="section-label" style="color:var(--primary-light);">Ready to See Clearly?</span>
+            <h2 style="color:#fff;font-size:2.4rem;margin-bottom:12px;">Book Your Headlight Restoration Today</h2>
+            <p style="color:rgba(255,255,255,0.8);max-width:540px;margin:0 auto 32px;font-size:1.05rem;">Join 5,000+
+                satisfied customers who drive with crystal-clear headlights. Same-day appointments available.
+            </p>
+            <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+                <a href="booking.html" class="btn btn-primary btn-lg" id="cta-book">Book Now — It's Easy</a>
+                <a href="pricing.html" class="btn btn-secondary btn-lg"
+                    style="color:#fff;border-color:rgba(255,255,255,0.4);" id="cta-pricing">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shared Footer Container -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
