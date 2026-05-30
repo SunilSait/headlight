@@ -83,12 +83,12 @@
                     <!-- Right Side Actions -->
                     <div class="flex items-center gap-2 xl:gap-2.5">
                         <!-- RTL Toggle -->
-                        <button id="dir-toggle" class="js-dir-toggle hidden xl:flex w-10 h-10 items-center justify-center rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 hover:border-sky-500/50 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all shadow-sm group" aria-label="Toggle text direction">
+                        <button id="dir-toggle" class="js-dir-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 hover:border-sky-500/50 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all shadow-sm group" aria-label="Toggle text direction">
                             <i class="fas fa-exchange-alt text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors"></i>
                         </button>
 
                         <!-- Theme Toggle -->
-                        <button id="theme-toggle-desktop" class="js-theme-toggle hidden xl:flex w-10 h-10 items-center justify-center rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 hover:border-sky-500/50 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all shadow-sm group" aria-label="Toggle theme">
+                        <button id="theme-toggle-desktop" class="js-theme-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 hover:border-sky-500/50 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all shadow-sm group" aria-label="Toggle theme">
                             <i class="fas fa-moon text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors"></i>
                         </button>
 
@@ -117,14 +117,12 @@
                         ${navLinksMobile}
                     </div>
                     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100 dark:border-slate-850 pt-6">
-                        <div class="flex gap-3 w-full sm:w-auto">
-                            <button class="js-dir-toggle flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 transition-all flex-1 sm:flex-none justify-center">
-                                <i class="fas fa-exchange-alt text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-widest">LTR / RTL</span>
+                        <div class="flex gap-3 w-full sm:w-auto justify-start">
+                            <button class="js-dir-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 hover:border-sky-500/50 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all shadow-sm group" aria-label="Toggle text direction">
+                                <i class="fas fa-exchange-alt text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors"></i>
                             </button>
-                            <button class="js-theme-toggle flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 transition-all flex-1 sm:flex-none justify-center">
-                                <i class="fas fa-moon text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-widest">Theme</span>
+                            <button class="js-theme-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-slate-100/40 dark:bg-slate-800 border border-slate-200/50 dark:border-slate-700 hover:border-sky-500/50 hover:bg-sky-50 dark:hover:bg-slate-700 transition-all shadow-sm group" aria-label="Toggle theme">
+                                <i class="fas fa-moon text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors"></i>
                             </button>
                         </div>
                         <div class="flex gap-2 w-full sm:w-auto">
