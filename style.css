@@ -1245,11 +1245,18 @@ input, textarea, select, button {
     .btn-lg { padding: 14px 28px; font-size: 0.95rem; }
 
     .timeline::before { left: 16px; }
+    .timeline-dot { left: 8px; }
     .timeline-item { padding-left: 48px; }
     [dir="rtl"] .timeline::before { right: 16px; }
+    [dir="rtl"] .timeline-dot { left: auto; right: 8px; }
     [dir="rtl"] .timeline-item { padding-right: 48px; }
 
     .booking-step .step-label { font-size: 0.65rem; }
+
+    .auth-top-icons { top: 12px; right: 12px; }
+    [dir="rtl"] .auth-top-icons { right: auto; left: 12px; }
+    .utility-page { padding-top: 64px !important; }
+    .auth-page { padding-top: 64px !important; }
 }
 
 /* Mobile */
