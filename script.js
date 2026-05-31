@@ -88,6 +88,15 @@ function initFilterTabs() {
     const items = document.querySelectorAll('[data-category]');
     if (!tabs.length) return;
 
+    const updateCentering = () => {
+        const visibleItems = Array.from(items).filter(item => item.style.display !== 'none');
+        items.forEach(item => item.classList.remove('grid-item-centered'));
+        if (visibleItems.length % 2 !== 0 && visibleItems.length > 0) {
+            const lastVisible = visibleItems[visibleItems.length - 1];
+            lastVisible.classList.add('grid-item-centered');
+        }
+    };
+
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             tabs.forEach(t => t.classList.remove('active'));
@@ -102,8 +111,12 @@ function initFilterTabs() {
                     item.style.display = 'none';
                 }
             });
+            updateCentering();
         });
     });
+
+    // Run initial centering
+    updateCentering();
 }
 
 // ---- Scroll Animations ----

@@ -59,7 +59,7 @@
             const isActive = link.href === currentPage ||
                 (currentPage === '' && link.href === 'index.html');
             return `<a href="${link.href}" class="nav-link flex items-center px-4 py-3.5 text-base font-bold border-b border-slate-100 dark:border-slate-800 hover:text-sky-500 dark:hover:text-sky-400 transition-all duration-300 ${isActive ? 'text-sky-500 dark:text-sky-400 bg-sky-50/50 dark:bg-sky-900/10' : 'text-slate-700 dark:text-slate-200'}">
-                <i class="fas ${link.icon} w-6 text-sm opacity-50 mr-2 rtl:mr-0 rtl:ml-2 text-center"></i> ${link.label}
+                ${link.label}
             </a>`;
         }).join('');
 
@@ -92,11 +92,6 @@
                             <i class="fas fa-moon text-sm text-slate-600 dark:text-slate-400 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors"></i>
                         </button>
 
-                        <!-- Secondary CTA -->
-                        <a href="booking.html" class="hidden xl:inline-block border border-sky-500 text-sky-500 dark:text-sky-400 dark:border-sky-400 hover:bg-sky-500 hover:text-white dark:hover:bg-sky-500 dark:hover:text-white px-3 py-2 xl:px-4 xl:py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all shadow-sm whitespace-nowrap">
-                            Book Now
-                        </a>
-
                         <!-- Primary CTA -->
                         <a href="signup.html" class="hidden xl:inline-block bg-sky-500 text-white px-3 py-2 xl:px-4 xl:py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-sky-600 dark:bg-sky-500 dark:hover:bg-sky-600 shadow-lg shadow-sky-500/20 transition-all active:scale-95 btn-shine whitespace-nowrap">
                             Sign Up
@@ -126,9 +121,6 @@
                             </button>
                         </div>
                         <div class="flex gap-2 w-full sm:w-auto">
-                            <a href="booking.html" class="flex-1 sm:flex-none text-center border border-sky-500 text-sky-500 dark:text-sky-400 dark:border-sky-400 hover:bg-sky-500 hover:text-white dark:hover:bg-sky-500 dark:hover:text-white px-5 py-3.5 rounded-2xl font-bold uppercase tracking-widest text-xs transition-all">
-                                Book Now
-                            </a>
                             <a href="signup.html" class="flex-1 sm:flex-none text-center bg-sky-500 text-white px-5 py-3.5 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-sky-600 dark:bg-sky-500 dark:hover:bg-sky-600 shadow-lg transition-all">
                                 Sign Up
                             </a>
@@ -282,22 +274,38 @@
                     grid-template-columns: repeat(2, 1fr) !important;
                 }
             }
-            @media (min-width: 769px) and (max-width: 1024px) {
+            @media (min-width: 1025px) {
+                .grid-2 > *:last-child:nth-child(odd) {
+                    grid-column: 1 / span 2 !important;
+                    max-width: calc(50% - 12px) !important;
+                    width: 100% !important;
+                    justify-self: center !important;
+                }
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
                 .grid-3 > *:last-child:nth-child(odd),
                 .grid-4 > *:last-child:nth-child(odd) {
                     grid-column: 1 / span 2 !important;
                     max-width: calc(50% - 12px) !important;
                     width: 100% !important;
-                    margin: 0 auto !important;
+                    justify-self: center !important;
                 }
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 .grid-3 {
                     grid-template-columns: 1fr !important;
                 }
                 .grid-4 {
                     grid-template-columns: 1fr !important;
                 }
+            }
+            #mobile-menu {
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                right: 0 !important;
+                z-index: 9999 !important;
+                box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08) !important;
             }
         `;
         document.head.appendChild(style);
