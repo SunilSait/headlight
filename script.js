@@ -177,7 +177,7 @@ function initBASliders() {
             let percent = ((x - rect.left) / rect.width) * 100;
             percent = Math.max(2, Math.min(98, percent));
             handle.style.left = percent + '%';
-            afterImg.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+            afterImg.style.clipPath = `inset(0 0 0 ${percent}%)`;
         };
 
         handle.addEventListener('mousedown', (e) => {

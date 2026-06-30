@@ -62,10 +62,9 @@
                 ${link.label}
             </a>`;
         }).join('');
-
         return `
         <nav id="main-nav" class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 transition-all duration-300">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
+            <div class="container">
                 <div class="flex justify-between items-center h-20">
                     <!-- Logo -->
                     <a href="index.html" class="flex items-center gap-2 group">
@@ -107,7 +106,7 @@
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden xl:hidden bg-white/95 dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800 transition-all duration-300 max-h-[85vh] overflow-y-auto">
-                <div class="max-w-7xl mx-auto px-4 pt-4 pb-8">
+                <div class="container pt-4 pb-8">
                     <div class="grid grid-cols-1 gap-1 mb-6">
                         ${navLinksMobile}
                     </div>
@@ -141,7 +140,7 @@
 
         return `
         <footer class="bg-slate-50/40 dark:bg-slate-950 border-t border-slate-100 dark:border-slate-850 pt-16 pb-6 transition-colors duration-300">
-            <div class="max-w-7xl mx-auto px-4">
+            <div class="container">
                 <!-- Main Footer Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     <!-- Brand Column -->
@@ -166,7 +165,7 @@
                             <li><a href="home2.html" class="hover:text-sky-500 dark:hover:text-sky-400 hover:pl-2 transition-all duration-200 block">Home 2 (Premium)</a></li>
                             <li><a href="services.html" class="hover:text-sky-500 dark:hover:text-sky-400 hover:pl-2 transition-all duration-200 block">Our Services</a></li>
                             <li><a href="gallery.html" class="hover:text-sky-500 dark:hover:text-sky-400 hover:pl-2 transition-all duration-200 block">Before & After Gallery</a></li>
-                            <li><a href="pricing.html" class="hover:text-sky-500 dark:hover:text-sky-400 hover:pl-2 transition-all duration-200 block">Pricing & Calculator</a></li>
+                            <li><a href="pricing.html" class="hover:text-sky-500 dark:hover:text-sky-400 hover:pl-2 transition-all duration-200 block">Pricing & Plans</a></li>
                         </ul>
                     </div>
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LensGlow pricing — transparent headlight restoration pricing with interactive calculator. Basic, Standard, and Premium plans with UV protection options.">
-    <title>Pricing & Calculator | LensGlow Headlight Restoration</title>
+    <meta name="description" content="LensGlow pricing — transparent headlight restoration pricing and plans. Basic, Standard, and Premium plans with UV protection options.">
+    <title>Pricing & Plans | LensGlow Headlight Restoration</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='50' rx='38' ry='32' fill='%230EA5E9' opacity='0.15' stroke='%230EA5E9' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%230EA5E9'/%3E%3C/svg%3E">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -111,73 +111,15 @@
         </div>
     </section>
 
-    <!-- Price Calculator -->
-    <section class="section" id="calculator">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-label">Price Calculator</span>
-                <h2>Estimate Your Total</h2>
-                <p>Select your vehicle type, service, and add-ons to get an instant price estimate.</p>
-            </div>
-            <div class="calc-card animate-on-scroll zoom-in" style="max-width:600px;margin:0 auto;" id="price-calculator">
-                <div class="form-group">
-                    <label for="calc-vehicle">Vehicle Type</label>
-                    <select class="calc-select" id="calc-vehicle">
-                        <option value="sedan">Sedan / Compact</option>
-                        <option value="suv">SUV / Crossover (+15%)</option>
-                        <option value="truck">Truck / Van (+25%)</option>
-                        <option value="luxury">Luxury / Sports (+40%)</option>
-                        <option value="fleet">Fleet Vehicle (-15%)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="calc-service">Service</label>
-                    <select class="calc-select" id="calc-service">
-                        <option value="headlight-basic">Basic Headlight Restoration — $79</option>
-                        <option value="headlight-standard" selected>Standard Restoration + UV Coating — $129</option>
-                        <option value="headlight-premium">Premium Full Lens Overhaul — $199</option>
-                        <option value="taillight">Tail Light Restoration — $89</option>
-                        <option value="foglight">Fog Light Restoration — $69</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Add-Ons</label>
-                    <div style="display:flex;flex-direction:column;gap:10px;">
-                        <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;cursor:pointer;">
-                            <input type="checkbox" class="calc-addon" data-price="49" style="accent-color:var(--primary);width:18px;height:18px;">
-                            UV Ceramic Coating (+$49)
-                        </label>
-                        <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;cursor:pointer;">
-                            <input type="checkbox" class="calc-addon" data-price="39" style="accent-color:var(--primary);width:18px;height:18px;">
-                            Interior Light Cleaning (+$39)
-                        </label>
-                        <label style="display:flex;align-items:center;gap:8px;font-size:0.9rem;cursor:pointer;">
-                            <input type="checkbox" class="calc-addon" data-price="29" style="accent-color:var(--primary);width:18px;height:18px;">
-                            Headlight Sealant Touch-Up (+$29)
-                        </label>
-                    </div>
-                </div>
-                <div class="calc-result">
-                    <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:2px;opacity:0.8;margin-bottom:4px;">Estimated Total</div>
-                    <div class="calc-total" id="calc-total">$129</div>
-                    <div style="font-size:0.85rem;opacity:0.8;margin-top:4px;">Both headlights • Mobile service included</div>
-                </div>
-                <a href="booking.html" class="btn btn-primary btn-full btn-lg" style="margin-top:20px;">Book at This Price</a>
-            </div>
-        </div>
-    </section>
-
-    </section>
-
     <!-- DIY vs Professional Cost Analysis -->
-    <section class="section" id="diy-vs-pro" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+    <section class="section" id="diy-vs-pro" style="background:var(--surface);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
         <div class="container animate-on-scroll">
             <div class="section-header">
                 <span class="section-label">Smart Investment</span>
                 <h2>DIY Kits vs. Professional Restoration vs. Replacement</h2>
                 <p>Replacing headlights can cost over $500 per unit, while cheap DIY kits degrade lenses in the long run. Here is the financial breakdown.</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+            <div class="grid-3 mt-12">
                 <!-- DIY -->
                 <div class="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
                     <h3 class="text-lg font-bold mb-2 text-slate-500" style="font-family:'Outfit',sans-serif;">Cheap DIY Aerosol Kits</h3>
@@ -219,80 +161,81 @@
         </div>
     </section>
 
-    <!-- Fleet & Commercial Volume Contract Pricing -->
-    <section class="section" id="fleet-commercial-pricing" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
-        <div class="container animate-on-scroll">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Content -->
-                <div class="space-y-6">
-                    <span class="section-label"><i class="fa-solid fa-truck-moving" style="margin-right:6px;"></i> Volume Discounts</span>
-                    <h2 class="text-3xl font-extrabold" style="font-family:'Outfit',sans-serif;">Fleet & Commercial Volume Pricing</h2>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                        We work directly with logistics fleets, taxi companies, rental car services, and used car dealerships. Maintain safety compliance, pass state inspections, and maximize your inventory value with our mobile restoration services.
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-                        <!-- Card 1 -->
-                        <div class="p-6 rounded-2xl border-l-4 border-l-sky-500 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex items-center gap-2.5 mb-3 text-sky-500">
-                                <i class="fa-solid fa-car-side text-lg"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">5-10 Vehicles</span>
-                            </div>
-                            <div class="text-3xl font-black text-slate-800 dark:text-white mb-2">10% OFF</div>
-                            <p class="text-xs text-slate-400 dark:text-slate-500">Perfect for small business fleets and local automotive dealerships.</p>
-                                         <!-- Card 2 -->
-                        <div class="p-6 rounded-2xl border-l-4 border-l-sky-500 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex items-center gap-2.5 mb-3 text-sky-500">
-                                <i class="fa-solid fa-truck text-lg"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">11+ Vehicles</span>
-                            </div>
-                            <div class="text-3xl font-black text-slate-800 dark:text-white mb-2">15% OFF</div>
-                            <p class="text-xs text-slate-400 dark:text-slate-500">Dedicated dispatch routing, bulk discount contracts, and corporate terms.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Visual Table -->
-                <div class="p-8 rounded-3xl border border-sky-500/10 bg-slate-900 text-white shadow-2xl relative overflow-hidden group">
-                    <!-- Subtle background blur effect -->
-                    <div class="absolute -right-16 -top-16 w-36 h-36 bg-sky-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
-                    <div class="absolute -left-16 -bottom-16 w-36 h-36 bg-sky-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
-                    
-                    <h3 class="text-xs font-black text-sky-400 uppercase tracking-widest text-center mb-6" style="font-family:'Outfit',sans-serif;">Volume Scheduling Perks</h3>
-                    <ul class="space-y-4 relative z-10 mb-8">
-                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
-                            <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                            <span><strong>Zero Downtime:</strong> We restore headlights on-site at your facility during off-hours.</span>
-                        </li>
-                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
-                            <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                            <span><strong>Consolidated Invoicing:</strong> Monthly purchase order billing and transparent fleet accounts.</span>
-                        </li>
-                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
-                            <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                            <span><strong>Extended Fleets Warranty:</strong> Dedicated safety warranties on all commercial operations.</span>
-                        </li>
-                        <li class="flex items-start gap-3.5 text-xs text-slate-300">
-                            <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
-                            <span><strong>Dedicated Dispatch Account:</strong> Direct booking hotlines and customer success representatives.</span>
-                        </li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary btn-full btn-lg btn-shine relative z-10 font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-file-invoice-dollar mr-2"></i> Request Commercial Proposal
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
- 
     <!-- Money Back Guarantee -->
     <section class="section" id="guarantee" style="text-align:center;background:var(--warm-white);">
         <div class="container animate-on-scroll">
             <div style="display:inline-flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius-xl);padding:28px 40px;box-shadow:0 4px 20px var(--shadow-base);flex-wrap:wrap;justify-content:center;">
                 <div style="width:56px;height:56px;border-radius:50%;background:rgba(14,165,233,0.12);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">
                     <i class="fa-solid fa-shield-halved"></i>
-                </div>        </div>
+                </div>
                 <div style="text-align:left;">
                     <h3 style="font-size:1.15rem;margin-bottom:4px;font-family:'Outfit',sans-serif;">100% Satisfaction Guarantee</h3>
                     <p style="font-size:0.9rem;color:var(--text-muted);">Not satisfied with the results? We'll redo the service at no charge — no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet & Commercial Volume Contract Pricing -->
+    <section class="section" id="fleet-commercial-pricing" style="background:var(--surface-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center" style="text-align:center; margin-bottom: 48px;">
+                <span class="section-label" style="display:inline-flex; align-items:center; gap:6px; justify-content:center;"><i class="fa-solid fa-truck-moving"></i> Volume Discounts</span>
+                <h2 style="font-family:'Outfit',sans-serif; text-align:center;">Fleet & Commercial Volume Pricing</h2>
+                <p style="text-align:center; max-width: 680px; margin: 12px auto 0; color:var(--text-muted);">We work directly with logistics fleets, taxi companies, rental car services, and used car dealerships. Maintain safety compliance, pass state inspections, and maximize your inventory value with our mobile restoration services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 items-stretch">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-3xl border-t-4 border-t-sky-500 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" style="text-align:center;">
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="flex items-center justify-center gap-2.5 mb-4 text-sky-500">
+                            <i class="fa-solid fa-car-side text-lg"></i>
+                            <span class="text-xs font-bold uppercase tracking-wider">5-10 Vehicles</span>
+                        </div>
+                        <div class="text-4xl font-black text-slate-800 dark:text-white mb-3">10% OFF</div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed" style="text-align:center;">Perfect for small business fleets, local car rental companies, and local automotive dealerships looking for regular maintenance.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="p-8 rounded-3xl border-t-4 border-t-sky-500 border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" style="text-align:center;">
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="flex items-center justify-center gap-2.5 mb-4 text-sky-500">
+                            <i class="fa-solid fa-truck text-lg"></i>
+                            <span class="text-xs font-bold uppercase tracking-wider">11+ Vehicles</span>
+                        </div>
+                        <div class="text-4xl font-black text-slate-800 dark:text-white mb-3">15% OFF</div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed" style="text-align:center;">Ideal for large delivery logistics fleets, corporate vehicle dispatch routing, and wholesale dealership partnerships with custom contract terms.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Perks -->
+                <div class="p-8 rounded-3xl border border-sky-500/10 bg-slate-900 text-white shadow-2xl relative overflow-hidden group flex flex-col justify-between" style="text-align:left;">
+                    <div class="absolute -right-16 -top-16 w-36 h-36 bg-sky-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+                    <div class="absolute -left-16 -bottom-16 w-36 h-36 bg-sky-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+                    
+                    <div style="position:relative; z-10;">
+                        <h3 class="text-xs font-black text-sky-400 uppercase tracking-widest text-center mb-5" style="font-family:'Outfit',sans-serif;">Volume Perks Included</h3>
+                        <ul class="space-y-3.5 mb-6">
+                            <li class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                                <span><strong>Zero Downtime:</strong> Restore on-site during off-hours.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                                <span><strong>Consolidated Billing:</strong> Purchase order billing terms.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <div class="w-5 h-5 rounded-full bg-sky-500/15 text-sky-400 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-[10px]"></i></div>
+                                <span><strong>Fleets Warranty:</strong> Dedicated safety warranties on all jobs.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary btn-full btn-shine relative z-10 font-bold uppercase tracking-wider" style="margin-top:auto;">
+                        Request Commercial Proposal
+                    </a>
                 </div>
             </div>
         </div>
